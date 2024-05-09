@@ -1,0 +1,20 @@
+<div class="header">
+    <div class="logo">
+    </div>
+    <div>
+        <form>
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="جستجوی محصولات">
+                <div class="search-svg">
+                    <svg-icon src="/assets/svg/search.svg"></svg-icon>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="list">
+        <div class="item-list" *ngFor="let itemList of list">
+            <span class="icon">{{itemList.icon}}</span>
+            <span class="title-list">{{itemList.title}}</span>
+        </div>
+    </div>
+</div>
