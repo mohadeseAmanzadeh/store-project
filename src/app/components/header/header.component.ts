@@ -13,12 +13,7 @@ export class HeaderComponent {
 
   public list = [
     {
-      title: 'تومان',
-      icon: '',
-      link: ''
-    },
-    {
-      title: 'علاقه مندی',
+      title: 'ورود / ثبت نام',
       icon: '',
       link: ''
     },
@@ -27,10 +22,10 @@ export class HeaderComponent {
       icon: '',
       link: ''
     },
-    {
-      title: 'ورود / ثبت نام',
-      icon: '',
-      link: ''
-    }
+   
   ]
+
+  showInput() {
+    
+  }
 }
