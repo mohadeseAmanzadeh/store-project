@@ -1,6 +1,6 @@
 <div class="header">
-    <div class="logo">
-    </div>
+    <!-- <div class="logo">
+    </div> -->
     <div class="list">
         <div class="item-list" *ngFor="let itemList of list">
             <span class="icon">{{itemList.icon}}</span>
@@ -10,13 +10,9 @@
     <div class="form">
         <form>
             <div class="search-box">
-                <label>جستجو</label>
-                <input class="search-input" type="hidden">
-                <div class="search-button">
-                    <button>
-                        <svg-icon src="/assets/svg/search.svg"></svg-icon>
-                    </button>
-                </div>
+                <!-- <label>جستجو</label> -->
+                <input class="search-input" type="text" placeholder="جستجوی محصولات">
+                <svg-icon src="/assets/svg/search.svg"></svg-icon>
             </div>
         </form>
     </div>
