@@ -1,0 +1,41 @@
+@import '../../../style/components/variables.scss';
+.accordion {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: 0;
+    direction: rtl;
+    padding: 16px 20px 4px 20px;
+    .header-accordion {
+        padding-bottom: 5px;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: transparent;
+        .arrow {
+            transform: rotate(180deg);
+            height: 24px;
+            svg-icon {
+                display: inline-block;
+                height: 24px;
+            }
+        }
+    }
+
+    .content {
+		max-height: 0;
+		overflow: hidden;
+		box-sizing: border-box;	
+	}
+
+    &.active {
+        border-bottom: 1px solid $accordionBorder;
+        .header-accordion {
+            .arrow {
+                transform: rotate(0);
+            }
+        }
+    }
+
+}

@@ -1,0 +1,10 @@
+.main {
+    padding-bottom: 20px;
+    height: calc(100vh - 85px);
+    box-sizing: border-box;
+    .main-inner {
+        padding: 16px;
+        height: 100%;
+        box-sizing: border-box;
+    }
+}
