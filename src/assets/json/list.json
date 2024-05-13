@@ -1,0 +1,444 @@
+[
+    {
+        "brandId": "1",
+        "id": "1",
+        "model": "LTP-V300D-1A2UDF",
+        "price": "2,280,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/m/t/mtp-1370l-7a_0.jpg"
+    },
+    {
+        "brandId": "1",
+        "id": "2",
+        "model": "MTP-V004L-1B2UDF",
+        "price": "1,380,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/m/t/mtp-v004l-1b2udf.jpg"
+    },
+    {
+        "brandId": "1",
+        "id": "3",
+        "model": "GA-B2100-2ADR",
+        "price": "7,280,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/g/a/ga-2100-1adr_0_1.jpg"
+    },
+    {
+        "brandId": "1",
+        "id": "4",
+        "model": "LTP-1335D-7A",
+        "price": "2,500,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/l/t/ltp-1335d-7a_0_3.jpg"
+    },
+    {
+        "brandId": "1",
+        "id": "5",
+        "model": "MTP-V300L-7A",
+        "price": "2,800,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/m/t/mtp-v300l-7a.jpg"
+    },
+    {
+        "brandId": "1",
+        "id": "6",
+        "model": "LTP-V300D-1A2UDF",
+        "price": "1,480,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/l/r/lrw-200h-4e3vdf_0_1.jpg"
+    },
+    {
+        "brandId": "1",
+        "id": "7",
+        "model": "MTP-1370L-7A",
+        "price": "2,530,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/m/t/mtp-1370l-7a_0.jpg"
+    },
+    {
+        "brandId": "1",
+        "id": "8",
+        "model": "MTP-1215A-1A",
+        "price": "2,950,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/m/t/mtp-1215a-1a.jpg"
+    },
+    {
+        "brandId": "1",
+        "id": "9",
+        "model": "EFV-610D-3CVUDF",
+        "price": "7,320,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/e/f/efv-610d-3cvudf.jpg"
+    },
+    {
+        "brandId": "1",
+        "id": "10",
+        "model": "EFV-600D-3CVUDF",
+        "price": "8,540,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/e/f/efv-600d-3cvudf.jpg"
+    },
+    {
+        "brandId": "1",
+        "id": "11",
+        "model": "LA670WGA-9D",
+        "price": "2,120,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/l/a/la670wga-9d_0_1.jpg"
+    },
+    {
+        "brandId": "1",
+        "id": "12",
+        "model": "LTP-1183A-2A",
+        "price": "1,920,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/l/t/ltp-1183a-2a_0_1.jpg"
+    },
+    {
+        "brandId": "1",
+        "id": "13",
+        "model": "GM-2100B-3ADR",
+        "price": "14,720,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/g/m/gm-2100b-3adr_0.jpg"
+    },
+    {
+        "brandId": "1",
+        "id": "14",
+        "model": "GBA-900RD-4ADR",
+        "price": "9,730,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/g/b/gba-900rd-4adr_0.jpg"
+    },
+    {
+        "brandId": "1",
+        "id": "15",
+        "model": "MTP-VD300SG-1EUDF",
+        "price": "3,600,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/m/t/mtp-vd300sg-1eudf_0.jpg"
+    },
+    {
+        "brandId": "1",
+        "id": "16",
+        "model": "EFR-526L-7A",
+        "price": "6,870,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/e/f/efr-526l-7a_0_1.jpg"
+    },
+    {
+        "brandId": "1",
+        "id": "17",
+        "model": "GA-110MW-7A",
+        "price": "8,450,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/g/a/ga-110mw-7a_0_1.jpg"
+    },
+    {
+        "brandId": "1",
+        "id": "18",
+        "model": "LF-20W-3ADF",
+        "price": "2,170,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/l/f/lf-20w-3adf.jpg"
+    },
+    {
+        "brandId": "1",
+        "id": "19",
+        "model": "EFV-570D-1A",
+        "price": "6,670,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/e/f/efv-570d-1a_0_1.jpg"
+    },
+    {
+        "brandId": "1",
+        "id": "20",
+        "model": " AE-1000W-3A",
+        "price": "11,700,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/a/e/ae-1000w-3a_0_1.jpg"
+    },
+    {
+        "brandId": "1",
+        "id": "21",
+        "model": "GA-400SK-1A4DR",
+        "price": "4,690,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/g/a/ga-400sk-1a4dr_0_1.jpg"
+    },
+    {
+        "brandId": "1",
+        "id": "22",
+        "model": "MTP-1374D-2AVDF",
+        "price": "7,280,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/m/t/mtp-1374d-2avdf_0_1.jpg"
+    },
+    {
+        "brandId": "1",
+        "id": "23",
+        "model": "AE-1400WH-9A",
+        "price": "2,500,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/a/e/ae-1400wh-9a_0_1.jpg"
+    },
+    {
+        "brandId": "1",
+        "id": "24",
+        "model": "LTP-V300D-1A2UDF",
+        "price": "2,280,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/b/g/bga-280-4adr_0_1.jpg"
+    },
+    {
+        "brandId": "1",
+        "id": "25",
+        "model": "BA-130SP-7ADR",
+        "price": "8,870,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/b/a/ba-130sp-7adr_0.jpg"
+    },
+    {
+        "brandId": "2",
+        "id": "1",
+        "model": "BH5003-51L",
+        "price": "5,685,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/b/h/bh5003-51l_0.jpg"
+    },
+    {
+        "brandId": "2",
+        "id": "26",
+        "model": " ER0218-53X",
+        "price": "6,258,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/e/r/er0218-53x.jpg"
+      
+    },
+    {
+        "brandId": "2",
+        "id": "27",
+        "model": "BN0199-53X",
+        "price": "17,985,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/b/n/bn0199-53x.jpg"
+    },
+    {
+        "brandId": "2",
+        "id": "28",
+        "model": "CB5004-59W",
+        "price": "33,090,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/c/b/cb5004-59w_0.jpg"
+    },
+    {
+        "brandId": "2",
+        "id": "29",
+        "model": "AN3690-56B",
+        "price": "8,290,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/a/n/an3690-56b_0.jpg"
+    },
+    {
+        "brandId": "2",
+        "id": "30",
+        "model": "EM0533-82Y",
+        "price": "14,285,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/e/m/em0533-82y_0.jpg"
+    },
+
+    {
+        "brandId": "2",
+        "id": "31",
+        "model": "JY8078-01L",
+        "price": "28,985,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/j/y/jy8078-01l_0.jpg"
+    },
+    {
+        "brandId": "2",
+        "id": "32",
+        "model": "EQ9062-58A",
+        "price": "6,185,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/e/q/eq9062-58a_0.jpg"
+    },
+    {
+        "brandId": "2",
+        "id": "33",
+        "model": "BM7334-58E",
+        "price": "12,585,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/b/m/bm7334-58e.jpg"
+    },
+    {
+        "brandId": "2",
+        "id": "34",
+        "model": "EM0927-87Y",
+        "price": "13,985,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/e/m/em0927-87y_0.jpg"
+    },
+    {
+        "brandId": "2",
+        "id": "35",
+        "model": "BN0165-55L",
+        "price": "18,785,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/b/n/bn0165-55l_0.jpg"
+    },
+
+    {
+        "brandId": "2",
+        "id": "36",
+        "model": "CA7060-88L",
+        "price": "12,685,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/c/a/ca7060-88l_0.jpg"
+    },
+    {
+        "brandId": "2",
+        "id": "37",
+        "model": "CA4505-12E",
+        "price": "12,455,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/c/a/ca4505-12e_0.jpg"
+    },
+    {
+        "brandId": "2",
+        "id": "38",
+        "model": "BM7520-88N",
+        "price": "11,185,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/b/m/bm7520-88n_0.jpg"
+    },
+    {
+        "brandId": "2",
+        "id": "39",
+        "model": "BM8550-81A",
+        "price": "7,885,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/b/m/bm8550-81a_0.jpg"
+    },
+
+    {
+        "brandId": "2",
+        "id": "40",
+        "model": "EM0504-81A",
+        "price": "7,477,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/e/m/em0504-81a_0.jpg"
+    },
+    {
+        "brandId": "2",
+        "id": "41",
+        "model": "JY8085-81E",
+        "price": "34,485,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/j/y/jy8085-81e_0.jpg"
+    },
+    {
+        "brandId": "2",
+        "id": "42",
+        "model": "EW2294-61L",
+        "price": "67,985,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/e/w/ew2294-61l_0.jpg"
+    },
+    {
+        "brandId": "2",
+        "id": "`43",
+        "model": "EW5584-81Y",
+        "price": "97,440,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/e/w/ew5584-81y_1.jpg"
+    },
+    {
+        "brandId": "2",
+        "id": "44",
+        "model": "EQ9065-50E",
+        "price": "6,367,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/e/q/eq9065-50e_0.jpg"
+    },
+
+
+
+
+
+
+
+    {
+        "brandId": "3",
+        "id": "45",
+        "model": "RM7A02LLGGM1R1",
+        "price": "7,500,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/r/m/rm7a02llggm1r1.jpg"
+    },
+    {
+        "brandId": "3",
+        "id": "46",
+        "model": "AL9A11HMUWA42W-BL",
+        "price": "18,520,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/a/l/al9a11hmuwa42w-bl.jpg"
+    },
+    {
+        "brandId": "3",
+        "id": "47",
+        "model": "TL8A08FMNJASR4-W",
+        "price": "14,500,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/t/l/tl8a08fmnjasr4_1.jpg"
+    },
+    {
+        "brandId": "3",
+        "id": "48",
+        "model": " RM0356LL1WAF2W-PURPLE",
+        "price": "5,730,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/t/m/tm9a20fmrrab6r_1.jpgg"
+    },
+    {
+        "brandId": "3",
+        "id": "49",
+        "model": "RM6A01HLGGABR5-BR",
+        "price": "9,670,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/r/m/rm6a01hlggabr5_1.jpg"
+    },
+    {
+        "brandId": "3",
+        "id": "50",
+        "model": "PA3234HMWCAS1G-W",
+        "price": "26,685,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/p/a/pa3234hmwcas1g-w.jpg"
+    },
+    {
+        "brandId": "3",
+        "id": "51",
+        "model": "SL9204HM1GA31G",
+        "price": "10,000,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/s/l/sl9204hm1ga31g.jpg"
+    },
+    {
+        "brandId": "3",
+        "id": "52",
+        "model": " RM9905LL1GA81G",
+        "price": "4,500,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/c/a/ca7060-88l_0.jpg"
+    },
+    {
+        "brandId": "3",
+        "id": "53",
+        "model": "TM5A21HMRRASR5-W",
+        "price": "18,170,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/t/m/tm5a21hmrrasr5_1.jpg"
+    },
+    {
+        "brandId": "3",
+        "id": "54",
+        "model": "TM7A05MMCCA1R2-W",
+        "price": "9,380,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/t/m/tm7a05mmcca1r2_1.jpg"
+    },
+    {
+        "brandId": "3",
+        "id": "55",
+        "model": "TM8A11HMRRASR5-W",
+        "price": "19,685,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/t/m/tm8a11hmrrasr5.jpg"
+    },
+    {
+        "brandId": "3",
+        "id": "56",
+        "model": "TM8A12HMJJASR5-W",
+        "price": "15,090,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/t/m/tm8a12hmjjasr5_1.jpg"
+    },
+
+
+    {
+        "brandId": "3",
+        "id": "57",
+        "model": "CB9A08HMBWA32W-BK",
+        "price": "16,120,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/c/b/cb9a08hmbwa32w_1.jpg"
+    },
+    {
+        "brandId": "3",
+        "id": "58",
+        "model": "TM6A28HMWWASC5-W",
+        "price": "14,6850,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/c/b/cb5a10mmuwa4r2.jpg"
+    },{
+        "brandId": "3",
+        "id": "59",
+        "model": "RM9A16FLRRAP6R-WINE",
+        "price": "8,210,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/r/m/rm9a16flrrap6r_2.jpg"
+    },
+
+    {
+        "brandId": "3",
+        "id": "60",
+        "model": "RL4208LL1GA11G",
+        "price": "5,000,000",
+        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/r/l/rl4208ll1ga11g.jpg"
+    }
+
+
+]
