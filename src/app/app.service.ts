@@ -8,7 +8,7 @@ export class AppService {
 
   constructor(private _http: HttpClient) { }
 
-  public showData(){
+  public getData(){
     return  this._http
       .get('./assets/json/list.json',)
   }

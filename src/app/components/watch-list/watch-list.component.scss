@@ -1,0 +1,25 @@
+@import '../../../style/components/variables.scss';
+.card {
+    float: left;
+    direction: rtl;
+
+    .model {
+        color: $card-color;
+    }
+}
+
+.product-image {
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    border-radius: 3px;
+    background: $contianer;
+    min-height: 100px;
+
+    img {
+        width: 218px;
+        height: 218px;
+    }
+}

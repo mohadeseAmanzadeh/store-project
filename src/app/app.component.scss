@@ -1,7 +1,11 @@
+@import '../style/components/variables.scss';
 .main {
+    font-family: $fontNormal;
     padding-bottom: 20px;
     height: calc(100vh - 85px);
     box-sizing: border-box;
+    position: relative;
+    top: 70px;
     .main-outer {
         padding: 16px;
         height: 100%;

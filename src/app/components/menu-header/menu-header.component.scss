@@ -1,0 +1,34 @@
+@import '../../../style/components/variables.scss';
+.menu-header {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    direction: rtl;
+    padding-inline: 90px;
+    padding-block: 20px;
+    font-family: Vazir;
+    margin: 0px;
+    box-shadow: 0 6px 3px -6px #777;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    background: $contianer;
+    z-index: 10000;
+
+    .item-menu {
+        list-style: none;
+        cursor: pointer;
+
+        .title-menu {
+            padding: 5px 15px;
+            text-decoration: none;
+            color: $menu-color;
+            font-size: $fontSizeNormal;
+
+            &:hover {
+                color: $hover-row;
+            }
+
+        }
+    }
+}

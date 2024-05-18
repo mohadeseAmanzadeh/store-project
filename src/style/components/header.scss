@@ -10,8 +10,8 @@
     position: relative;
     top: 0px;
     height: 85px;
-    padding-inline: 20px;
-    background: #fff;
+    padding-inline: 100px;
+    background: $contianer;
     width: 100%;
     box-sizing: border-box;
     font-family: $fontNormal;
@@ -28,7 +28,7 @@
             margin-left: 6px;
             cursor: pointer;
             &:hover {
-                color: #777;
+                color: $hover-row;
             }
         }
     }

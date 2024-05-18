@@ -1,9 +1,20 @@
+@import '../../assets/fonts/font-face.scss';
 $fontSizeNormal: 13px;
-$fontNormal: tahoma;
+$fontNormal: Vazir;
 
 
-//color
+//borde-color
 
 
 $border: rgba(129,129,129,.2);
 $accordionBorder: #efefef;
+
+
+//color
+$card-color: #4a5157;
+$card-hover: rgba(0,0,0,.2);
+$hover-row: #777;
+$menu-color: #4a4a4a;
+
+//backgroung-color
+$contianer: #fff
