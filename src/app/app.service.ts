@@ -12,4 +12,9 @@ export class AppService {
     return  this._http
       .get('./assets/json/list.json',)
   }
+
+  public getList() {
+    return  this._http
+    .get('./assets/json/brandId.json',)
+  }
 }

@@ -16,6 +16,7 @@ import { CommonModule } from '@angular/common';
 export class WatchListComponent implements OnInit{
 
   public watchlist: any = [];
+  public list: any = [];
 
   constructor(
     private myService : AppService
@@ -25,6 +26,11 @@ export class WatchListComponent implements OnInit{
     this.myService.getData().subscribe((resp: any) => {
       console.log(resp);
       this.watchlist = resp
+    });
+
+    this.myService.getList().subscribe((resp: any) => {
+      console.log(resp);
+      this.list = resp
     });
   }
 
