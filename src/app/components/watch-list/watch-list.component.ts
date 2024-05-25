@@ -50,6 +50,14 @@ export class WatchListComponent implements OnInit{
   //   let idx = this.brandList.findIndex((brand: any) => brand.id == brandId);
   //   return this.brandList[idx];
   // }
+
+  // public text : string = '';
   
-  
+  // searchFunction(text: any) {
+  //   console.log( this.watchList.filter((e: any) => {
+  //     return e.model.toLowerCase() === text.toLowerCase() ||
+  //             e.price.toLowerCase().indexOf(text.toLowerCase()) >= 0
+  //             || e.brandTitle.toLowerCase() === text.toLowerCase();
+  //   }));
+  // }
 }
