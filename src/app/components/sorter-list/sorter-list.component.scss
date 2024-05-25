@@ -1,22 +1,59 @@
 @import '../../../style/components/variables.scss';
-.sorter {
-    border: 1px solid $border;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
+.sorter { 
+    margin-top: 10px;
+    margin-bottom: 60px;
+    margin-right: 220px;
+    margin-left: auto;
+    width: 350px;
+    // position: relative;
+    // right: 0px;
     .sort-by {
+       display: inline-block;
+      
+       label {
+            margin-left: 16px;
+            float: right;
+            line-height: 41px;
+            color: $card-color;
+            font-size: $fontSizeNormal;
+            unicode-bidi: plaintext;
+        }
+
         .buttons {
-            .botton {
-                a {
+            border: 1px solid $border;
+            border-radius: 50px;
+            display: inline-flex;
+            align-items: center;
+            .button {
+                background: $contianer;
+                a { 
                     text-decoration: none;
                     color: $card-color;
+                    padding: 10px 15px;
+                    color: $card-color;
+                    font-size: $fontSizeNormal;
+                    line-height: 41px;
+                }
+
+                &:not(:first-child) {
+                    border-left: 1px solid $border;
+                }
+
+                &.active {
+                    background: #eee;
+                }
+
+                &:first-child {
+                    border-top-left-radius: 50px;
+                    border-bottom-left-radius: 50px;
+                }
+
+                &:last-child {
+                    border-top-right-radius: 50px;
+                    border-bottom-right-radius: 50px;
                 }
             }
-            label {
-                unicode-bidi: bidi-override;
-                color: $card-color;
-                font-size: $fontSizeNormal;
-            }
+            
         }
     }
 }
