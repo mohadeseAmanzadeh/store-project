@@ -1,7 +1,7 @@
 
 <app-sorter-list></app-sorter-list>
 <div class="list">
-    <div class="card" *ngFor="let item of watchList">
+    <div class="card" *ngFor="let item of watchList | searchFilter:searchService.inputSearch | sort:'new'">
         <a href="" class="product-image">
             <img src="{{item.img}}" alt="">
         </a>  

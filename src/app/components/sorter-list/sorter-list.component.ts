@@ -1,5 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { SorterListService } from '../../services/sorter-list.service';
+import { SorterListInterface } from '../../interface/data.interface';
 
 @Component({
   selector: 'app-sorter-list',
@@ -11,18 +13,14 @@ import { Component } from '@angular/core';
   styleUrl: './sorter-list.component.scss'
 })
 export class SorterListComponent {
-  public sorterList =  [
-    {
-      title: 'جدیدترین',
-      active: true
-    },
-    {
-      title: 'ارزانترین',
-      active: false
-    },
-    {
-      title: 'گرانترین',
-      active: false
-    },
-  ]
+ 
+  public selectedSorterIdx: string = '';
+
+  constructor(
+    public sorterListService: SorterListService
+  ) {}
+
+  selectSorter(sorter: SorterListInterface) {
+      sorter.active = !sorter.active;
+  }
 }

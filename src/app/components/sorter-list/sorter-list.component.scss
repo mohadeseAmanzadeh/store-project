@@ -5,8 +5,6 @@
     margin-right: 220px;
     margin-left: auto;
     width: 350px;
-    // position: relative;
-    // right: 0px;
     .sort-by {
        display: inline-block;
       
@@ -26,13 +24,13 @@
             align-items: center;
             .button {
                 background: $contianer;
-                a { 
+                height: 40px;
+                .title-sort { 
                     text-decoration: none;
                     color: $card-color;
                     padding: 10px 15px;
                     color: $card-color;
                     font-size: $fontSizeNormal;
-                    line-height: 41px;
                 }
 
                 &:not(:first-child) {

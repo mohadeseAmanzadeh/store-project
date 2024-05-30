@@ -2,8 +2,11 @@
     <div class="sort-by">
         <label>نمایش براساس:</label>
         <div class="buttons">
-            <div class="button" *ngFor="let item of sorterList">
-                <a href="">{{item.title}}</a>
+            <div class="button" 
+                *ngFor="let sorter of sorterListService.sorterList" 
+                [ngClass]="{active: sorter.active}" 
+                (click)="selectSorter(sorter)">
+                <div class="title-sort">{{sorter.sortTitle}}</div>
             </div>
         </div>
     </div>

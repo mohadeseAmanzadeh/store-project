@@ -5,6 +5,9 @@ import { CommonModule } from '@angular/common';
 import { SorterListComponent } from '../sorter-list/sorter-list.component';
 import { AccordionDirective } from '../accordion/accordion.directive';
 import { AccordionComponent } from '../accordion/accordion.component';
+import { SearchService } from '../../services/search.service';
+import { SearchPipe } from '../../pipes/search.pipe';
+import { SortPipe } from '../../pipes/sort.pipe';
 
 
 @Component({
@@ -16,6 +19,8 @@ import { AccordionComponent } from '../accordion/accordion.component';
     CommonModule,
     AccordionDirective,
     AccordionComponent,
+    SearchPipe,
+    SortPipe
   ],
   templateUrl: './watch-list.component.html',
   styleUrl: './watch-list.component.scss'
@@ -26,7 +31,8 @@ export class WatchListComponent implements OnInit{
   public brandList: any = [];
 
   constructor(
-    private myService : AppService
+    private myService : AppService,
+    public searchService: SearchService
   ) {}
 
   ngOnInit(): void {
@@ -36,6 +42,7 @@ export class WatchListComponent implements OnInit{
         this.watchList = this._prepareItems(watchList, brandList);
       });
     });
+
   }
 
   private _prepareItems(watchList: any, brandList: any) {
@@ -45,19 +52,4 @@ export class WatchListComponent implements OnInit{
     });
     return watchList;
   }
-
-  // getBrand(brandId: number) {
-  //   let idx = this.brandList.findIndex((brand: any) => brand.id == brandId);
-  //   return this.brandList[idx];
-  // }
-
-  // public text : string = '';
-  
-  // searchFunction(text: any) {
-  //   console.log( this.watchList.filter((e: any) => {
-  //     return e.model.toLowerCase() === text.toLowerCase() ||
-  //             e.price.toLowerCase().indexOf(text.toLowerCase()) >= 0
-  //             || e.brandTitle.toLowerCase() === text.toLowerCase();
-  //   }));
-  // }
 }
