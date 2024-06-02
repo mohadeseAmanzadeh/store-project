@@ -8,6 +8,9 @@ import { AccordionComponent } from '../accordion/accordion.component';
 import { SearchService } from '../../services/search.service';
 import { SearchPipe } from '../../pipes/search.pipe';
 import { SortPipe } from '../../pipes/sort.pipe';
+import { SorterListService } from '../../services/sorter-list.service';
+
+
 
 
 @Component({
@@ -31,12 +34,13 @@ export class WatchListComponent implements OnInit{
   public brandList: any = [];
 
   constructor(
+    // private watchlistService : WatchListService,
     private myService : AppService,
-    public searchService: SearchService
+    public searchService: SearchService,
+    public sorterListService: SorterListService
   ) {}
 
   ngOnInit(): void {
-    
     this.myService.getList().subscribe((brandList: any) => {
       this.myService.getData().subscribe((watchList: any) => {
         this.watchList = this._prepareItems(watchList, brandList);

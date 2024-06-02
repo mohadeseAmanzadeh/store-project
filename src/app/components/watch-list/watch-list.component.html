@@ -1,18 +1,31 @@
 
-<app-sorter-list></app-sorter-list>
-<div class="list">
-    <div class="card" *ngFor="let item of watchList | searchFilter:searchService.inputSearch | sort:'new'">
-        <a href="" class="product-image">
-            <img src="{{item.img}}" alt="">
+<div class="dd">
+    <app-sorter-list></app-sorter-list>
+<div class="list">  
+    <div class="card" *ngFor="let item of watchList | searchFilter:searchService.inputSearch | sort:sorterListService.sortType">
+        <a class="product-image">
+            <img src="{{item.img}}" alt=""> 
         </a>  
        <div class="card-footer">
-            <div class="model">
-                <span>مدل</span>
-                <span>{{item.model}}</span>
-            </div>
-            <div class="price">
-                {{item.price}} -- {{item.brandTitle}}
-            </div>
+            <div class="information">
+                <div class="gender">
+                    <span class="title">ساعت مچی</span>
+                    <span class="value">زنانه</span>
+                </div>
+                <div class="brand-watch">
+                    <span class="title">برند</span>
+                    <span class="value">{{item.brandTitle}}</span>
+                </div>
+                <div class="model">
+                    <span class="title">مدل</span>
+                    <span class="value">{{item.model}}</span>
+                </div>
+                <div class="price">
+                    <span class="value">{{item.price | number }}</span>
+                    <span class="title">تومان</span>
+                   
+                </div>
+            </div>      
        </div>
     </div>
 </div>
@@ -23,7 +36,6 @@
                 <li>بچگانه</li>
                 <li>زنانه</li>
                 <li>مردانه</li>
-                <li>مردانه-زنانه</li>
             </ul>
         </app-accordion>
     </div> 
@@ -35,12 +47,7 @@
                 <li>گارانتی 24 ماهه دیجیران</li>
             </ul>
         </app-accordion>
-    </div>      
-    <div class="sort-menu">
-        <app-accordion title="قیمت">
-            
-        </app-accordion>
-    </div>   
+    </div>       
     <div class="sort-menu">
         <app-accordion title="رنگ صفحه">
             <ul class="menu">
@@ -55,4 +62,5 @@
             </ul>
         </app-accordion>
     </div>    
+</div>
 </div>

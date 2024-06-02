@@ -1,13 +1,17 @@
 export interface SorterListInterface {
 	sortTitle: string,
     type: string,
-    active: boolean
+    active: boolean,
+    id: number
 }
 
 
 export interface WatchListInterface {
 	title: string,
-    type: string,
-    active: boolean,
-
+    brandId: string,
+    pageColor: string,
+    model: string,
+    id: string,
+    price: string,
+    img: string,
 }
