@@ -6,8 +6,8 @@ import { AppService } from '../app.service';
 })
 export class WatchListService {
 
-  public watchList: any = [];
-  public brandList: any = [];
+  // public watchList: any = [];
+  // public brandList: any = [];
 
 
   constructor(

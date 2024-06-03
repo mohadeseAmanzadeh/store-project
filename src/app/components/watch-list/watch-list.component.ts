@@ -32,9 +32,10 @@ export class WatchListComponent implements OnInit{
 
   public watchList: any = [];
   public brandList: any = [];
+  public colorList: any = [];
+  public genderList: any = [];
 
   constructor(
-    // private watchlistService : WatchListService,
     private myService : AppService,
     public searchService: SearchService,
     public sorterListService: SorterListService
@@ -47,6 +48,17 @@ export class WatchListComponent implements OnInit{
       });
     });
 
+
+    // this.myService.getColorList().subscribe((colorList: any) => {
+    //   console.log(colorList);
+      
+    // });
+
+    // this.myService.getGenderList().subscribe((genderList: any) => {
+    //   console.log(genderList);
+      
+    // })
+
   }
 
   private _prepareItems(watchList: any, brandList: any) {
@@ -56,4 +68,23 @@ export class WatchListComponent implements OnInit{
     });
     return watchList;
   }
+
+  private _preparedColor(watchList: any, colorList: any) {
+    watchList.forEach((watch: any) => {
+      let idx = colorList.findIndex((color: any) => color.id == watch.colorId);
+      watch.colorTitle = colorList[idx].color;
+    });
+
+    return watchList;
+  }
+
+  private _preparedGender(watchList: any, genderList: any) {
+    watchList.forEach((watch: any) => {
+      let idx = genderList.findIndex((gender: any) => gender.id == watch.genderId);
+      watch.genderTitle = genderList[idx].gender;
+    });
+    
+    return watchList;
+  }
+
 }

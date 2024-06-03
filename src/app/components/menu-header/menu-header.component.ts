@@ -13,15 +13,7 @@ import { title } from 'process';
 })
 export class MenuHeaderComponent {
   public menu = [ 
-    {
-      title: 'ساعت مچی'
-    },
-    {
-      title: 'زیورالات'
-    },
-    {
-      title: 'ساعت دیواری'
-    },
+    
     {
       title: 'ساعت مردانه'
     },

@@ -1,5 +1,5 @@
 
-<div class="dd">
+<div class="watchList-container">
     <app-sorter-list></app-sorter-list>
 <div class="list">  
     <div class="card" *ngFor="let item of watchList | searchFilter:searchService.inputSearch | sort:sorterListService.sortType">
@@ -31,7 +31,7 @@
 </div>
 <div class="sort-list">
     <div class="sort-menu">
-        <app-accordion title="جنسیت">
+        <app-accordion titleHeader="جنسیت">
             <ul class="menu">
                 <li>بچگانه</li>
                 <li>زنانه</li>
@@ -40,7 +40,7 @@
         </app-accordion>
     </div> 
     <div class="sort-menu">
-        <app-accordion title="گارانتی">
+        <app-accordion titleHeader="گارانتی">
             <ul class="menu">
                 <li>گارانتی 12 ماهه پوزیترون</li>
                 <li>گارانتی 18 ماهه زمان و زیور</li>
@@ -49,16 +49,19 @@
         </app-accordion>
     </div>       
     <div class="sort-menu">
-        <app-accordion title="رنگ صفحه">
+        <app-accordion titleHeader="رنگ صفحه">
             <ul class="menu">
                 <li>ابی</li>
                 <li>بنفش</li>
                 <li>خاکستری</li>
                 <li>رزگلد</li>
-                <li>سورمه ای</li>
+                <li>سورمه‌ای</li>
                 <li>صورتی</li>
                 <li>مشکی</li>
-                <li>نقره ای</li>
+                <li>نقره‌ای</li>
+                <li>طلایی</li>
+                <li>سبز</li>
+                <li>سفید</li>
             </ul>
         </app-accordion>
     </div>    

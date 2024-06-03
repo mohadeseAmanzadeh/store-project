@@ -2,7 +2,9 @@
     {
         "brandId": "1",
         "colorId": "2",
+        "genderId": "3",
         "id": "1",
+        "date": "2023-02-01",
         "model": "LTP-V300D-1A2UDF",
         "price": "2280000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/m/t/mtp-1370l-7a_0.jpg"
@@ -10,7 +12,9 @@
     {
         "brandId": "1",
         "colorId": "8",
+        "genderId": "3",
         "id": "2",
+        "date": "2023-02-02",
         "model": "MTP-V004L-1B2UDF",
         "price": "1380000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/m/t/mtp-v004l-1b2udf.jpg"
@@ -18,7 +22,9 @@
     {
         "brandId": "1",
         "colorId": "8",
+        "genderId": "3",
         "id": "3",
+        "date": "2023-02-03",
         "model": "GA-B2100-2ADR",
         "price": "7280000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/g/a/ga-2100-1adr_0_1.jpg"
@@ -26,7 +32,9 @@
     {
         "brandId": "1",
         "colorId": "2",
+        "genderId": "3",
         "id": "4",
+        "date": "2023-02-04",
         "model": "LTP-1335D-7A",
         "price": "2500000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/l/t/ltp-1335d-7a_0_3.jpg"
@@ -34,7 +42,9 @@
     {
         "brandId": "1",
         "colorId": "2",
+        "genderId": "3",
         "id": "5",
+        "date": "2023-02-05",
         "model": "MTP-V300L-7A",
         "price": "2800000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/m/t/mtp-v300l-7a.jpg"
@@ -42,7 +52,9 @@
     {
         "brandId": "1",
         "colorId": "5",
+        "genderId": "2",
         "id": "6",
+        "date": "2023-02-06",
         "model": "LTP-V300D-1A2UDF",
         "price": "1480000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/l/r/lrw-200h-4e3vdf_0_1.jpg"
@@ -50,7 +62,9 @@
     {
         "brandId": "1",
         "colorId": "2",
+        "genderId": "3",
         "id": "7",
+        "date": "2023-02-07",
         "model": "MTP-1370L-7A",
         "price": "2530000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/m/t/mtp-1370l-7a_0.jpg"
@@ -58,7 +72,9 @@
     {
         "brandId": "1",
         "colorId": "8",
+        "genderId": "3",
         "id": "8",
+        "date": "2023-02-08",
         "model": "MTP-1215A-1A",
         "price": "2950000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/m/t/mtp-1215a-1a.jpg"
@@ -66,7 +82,9 @@
     {
         "brandId": "1",
         "colorId": "1",
+        "genderId": "3",
         "id": "9",
+        "date": "2023-02-09",
         "model": "EFV-610D-3CVUDF",
         "price": "7320000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/e/f/efv-610d-3cvudf.jpg"
@@ -74,7 +92,9 @@
     {
         "brandId": "1",
         "colorId": "1",
+        "genderId": "3",
         "id": "10",
+        "date": "2023-02-10",
         "model": "EFV-600D-3CVUDF",
         "price": "8540000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/e/f/efv-600d-3cvudf.jpg"
@@ -82,7 +102,9 @@
     {
         "brandId": "1",
         "colorId": "10",
+        "genderId": "2",
         "id": "11",
+        "date": "2023-03-01",
         "model": "LA670WGA-9D",
         "price": "2120000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/l/a/la670wga-9d_0_1.jpg"
@@ -90,7 +112,9 @@
     {
         "brandId": "1",
         "colorId": "9",
+        "genderId": "3",
         "id": "12",
+        "date": "2023-03-02",
         "model": "LTP-1183A-2A",
         "price": "1920000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/l/t/ltp-1183a-2a_0_1.jpg"
@@ -98,7 +122,9 @@
     {
         "brandId": "1",
         "colorId": "1",
+        "genderId": "3",
         "id": "13",
+        "date": "2023-03-03",
         "model": "GM-2100B-3ADR",
         "price": "14720000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/g/m/gm-2100b-3adr_0.jpg"
@@ -106,7 +132,9 @@
     {
         "brandId": "1",
         "colorId": "8",
+        "genderId": "3",
         "id": "14",
+        "date": "2023-03-04",
         "model": "GBA-900RD-4ADR",
         "price": "9730000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/g/b/gba-900rd-4adr_0.jpg"
@@ -114,7 +142,9 @@
     {
         "brandId": "1",
         "colorId": "8",
+        "genderId": "3",
         "id": "15",
+        "date": "2023-03-05",
         "model": "MTP-VD300SG-1EUDF",
         "price": "3600000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/m/t/mtp-vd300sg-1eudf_0.jpg"
@@ -122,7 +152,9 @@
     {
         "brandId": "1",
         "colorId": "11",
+        "genderId": "3",
         "id": "16",
+        "date": "2023-03-06",
         "model": "EFR-526L-7A",
         "price": "6870000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/e/f/efr-526l-7a_0_1.jpg"
@@ -130,7 +162,9 @@
     {
         "brandId": "1",
         "colorId": "3",
+        "genderId": "3",
         "id": "17",
+        "date": "2023-03-07",
         "model": "GA-110MW-7A",
         "price": "8450000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/g/a/ga-110mw-7a_0_1.jpg"
@@ -138,7 +172,9 @@
     {
         "brandId": "1",
         "colorId": "1",
+        "genderId": "3",
         "id": "18",
+        "date": "2023-03-08",
         "model": "LF-20W-3ADF",
         "price": "2170000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/l/f/lf-20w-3adf.jpg"
@@ -146,15 +182,19 @@
     {
         "brandId": "1",
         "colorId": "8",
+        "genderId": "3",
         "id": "19",
+        "date": "2023-03-09",
         "model": "EFV-570D-1A",
         "price": "6670000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/e/f/efv-570d-1a_0_1.jpg"
     },
     {
         "brandId": "1",
-        "colorId": "",
+        "colorId": "8",
+        "genderId": "3",
         "id": "20",
+        "date": "2023-03-10",
         "model": " AE-1000W-3A",
         "price": "11700000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/a/e/ae-1000w-3a_0_1.jpg"
@@ -162,7 +202,9 @@
     {
         "brandId": "1",
         "colorId": "1",
+        "genderId": "2",
         "id": "21",
+        "date": "2023-04-01",
         "model": "GA-400SK-1A4DR",
         "price": "4690000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/g/a/ga-400sk-1a4dr_0_1.jpg"
@@ -170,7 +212,9 @@
     {
         "brandId": "1",
         "colorId": "8",
+        "genderId": "3",
         "id": "22",
+        "date": "2023-04-02",
         "model": "MTP-1374D-2AVDF",
         "price": "7280000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/m/t/mtp-1374d-2avdf_0_1.jpg"
@@ -178,7 +222,9 @@
     {
         "brandId": "1",
         "colorId": "8",
+        "genderId": "3",
         "id": "23",
+        "date": "2023-04-03",
         "model": "AE-1400WH-9A",
         "price": "2500000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/a/e/ae-1400wh-9a_0_1.jpg"
@@ -186,7 +232,9 @@
     {
         "brandId": "1",
         "colorId": "5",
+        "genderId": "1",
         "id": "24",
+        "date": "2023-04-04",
         "model": "LTP-V300D-1A2UDF",
         "price": "2280000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/b/g/bga-280-4adr_0_1.jpg"
@@ -194,7 +242,9 @@
     {
         "brandId": "1",
         "colorId": "10",
+        "genderId": "2",
         "id": "25",
+        "date": "2023-04-05",
         "model": "BA-130SP-7ADR",
         "price": "8870000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/b/a/ba-130sp-7adr_0.jpg"
@@ -202,7 +252,9 @@
     {
         "brandId": "2",
         "colorId": "9",
+        "genderId": "3",
         "id": "1",
+        "date": "2023-04-06",
         "model": "BH5003-51L",
         "price": "5685000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/b/h/bh5003-51l_0.jpg"
@@ -210,16 +262,19 @@
     {
         "brandId": "2",
         "colorId": "5",
+        "genderId": "2",
         "id": "26",
+        "date": "2023-04-07",
         "model": " ER0218-53X",
         "price": "6258000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/e/r/er0218-53x.jpg"
-      
     },
     {
         "brandId": "2",
         "colorId": "1",
+        "genderId": "3",
         "id": "27",
+        "date": "2023-04-08",
         "model": "BN0199-53X",
         "price": "17985000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/b/n/bn0199-53x.jpg"
@@ -227,7 +282,9 @@
     {
         "brandId": "2",
         "colorId": "1",
+        "genderId": "3",
         "id": "28",
+        "date": "2023-04-09",
         "model": "CB5004-59W",
         "price": "33090000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/c/b/cb5004-59w_0.jpg"
@@ -235,7 +292,9 @@
     {
         "brandId": "2",
         "colorId": "2",
+        "genderId": "3",
         "id": "29",
+        "date": "2023-04-10",
         "model": "AN3690-56B",
         "price": "8290000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/a/n/an3690-56b_0.jpg"
@@ -243,16 +302,19 @@
     {
         "brandId": "2",
         "colorId": "5",
+        "genderId": "2",
         "id": "30",
+        "date": "2023-05-01",
         "model": "EM0533-82Y",
         "price": "14285000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/e/m/em0533-82y_0.jpg"
     },
-
     {
         "brandId": "2",
         "colorId": "7",
+        "genderId": "3",
         "id": "31",
+        "date": "2023-05-02",
         "model": "JY8078-01L",
         "price": "28985000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/j/y/jy8078-01l_0.jpg"
@@ -260,7 +322,9 @@
     {
         "brandId": "2",
         "colorId": "11",
+        "genderId": "2",
         "id": "32",
+        "date": "2023-05-03",
         "model": "EQ9062-58A",
         "price": "6185000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/e/q/eq9062-58a_0.jpg"
@@ -268,7 +332,9 @@
     {
         "brandId": "2",
         "colorId": "8",
+        "genderId": "3",
         "id": "33",
+        "date": "2023-05-04",
         "model": "BM7334-58E",
         "price": "12585000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/b/m/bm7334-58e.jpg"
@@ -276,7 +342,9 @@
     {
         "brandId": "2",
         "colorId": "5",
+        "genderId": "2",
         "id": "34",
+        "date": "2023-05-05",
         "model": "EM0927-87Y",
         "price": "13985000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/e/m/em0927-87y_0.jpg"
@@ -284,16 +352,19 @@
     {
         "brandId": "2",
         "colorId": "9",
+        "genderId": "3",
         "id": "35",
+        "date": "2023-05-06",
         "model": "BN0165-55L",
         "price": "18785000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/b/n/bn0165-55l_0.jpg"
     },
-
     {
         "brandId": "2",
         "colorId": "7",
+        "genderId": "3",
         "id": "36",
+        "date": "2023-05-07",
         "model": "CA7060-88L",
         "price": "12685000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/c/a/ca7060-88l_0.jpg"
@@ -301,7 +372,9 @@
     {
         "brandId": "2",
         "colorId": "8",
+        "genderId": "3",
         "id": "37",
+        "date": "2023-05-08",
         "model": "CA4505-12E",
         "price": "12455000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/c/a/ca4505-12e_0.jpg"
@@ -309,7 +382,9 @@
     {
         "brandId": "2",
         "colorId": "9",
+        "genderId": "2",
         "id": "38",
+        "date": "2023-05-09",
         "model": "BM7520-88N",
         "price": "11185000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/b/m/bm7520-88n_0.jpg"
@@ -317,7 +392,9 @@
     {
         "brandId": "2",
         "colorId": "3",
+        "genderId": "3",
         "id": "39",
+        "date": "2023-05-10",
         "model": "BM8550-81A",
         "price": "7885000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/b/m/bm8550-81a_0.jpg"
@@ -326,7 +403,9 @@
     {
         "brandId": "2",
         "colorId": "11",
+        "genderId": "2",
         "id": "40",
+        "date": "2024-01-01",
         "model": "EM0504-81A",
         "price": "7477000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/e/m/em0504-81a_0.jpg"
@@ -334,7 +413,9 @@
     {
         "brandId": "2",
         "colorId": "8",
+        "genderId": "3",
         "id": "41",
+        "date": "2024-01-02",
         "model": "JY8085-81E",
         "price": "34485000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/j/y/jy8085-81e_0.jpg"
@@ -342,7 +423,9 @@
     {
         "brandId": "2",
         "colorId": "7",
+        "genderId": "2",
         "id": "42",
+        "date": "2024-01-03",
         "model": "EW2294-61L",
         "price": "67985000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/e/w/ew2294-61l_0.jpg"
@@ -350,7 +433,9 @@
     {
         "brandId": "2",
         "colorId": "1",
-        "id": "`43",
+        "genderId": "2",
+        "id": "43",
+        "date": "2024-01-04",
         "model": "EW5584-81Y",
         "price": "97440000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/e/w/ew5584-81y_1.jpg"
@@ -358,7 +443,9 @@
     {
         "brandId": "2",
         "colorId": "8",
+        "genderId": "3",
         "id": "44",
+        "date": "2024-01-05",
         "model": "EQ9065-50E",
         "price": "6367000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/e/q/eq9065-50e_0.jpg"
@@ -366,7 +453,9 @@
     {
         "brandId": "3",
         "colorId": "11",
+        "genderId": "2",
         "id": "45",
+        "date": "2024-01-06",
         "model": "RM7A02LLGGM1R1",
         "price": "7500000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/r/m/rm7a02llggm1r1.jpg"
@@ -374,7 +463,9 @@
     {
         "brandId": "3",
         "colorId": "7",
+        "genderId": "3",
         "id": "46",
+        "date": "2024-01-07",
         "model": "AL9A11HMUWA42W-BL",
         "price": "18520000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/a/l/al9a11hmuwa42w-bl.jpg"
@@ -382,31 +473,19 @@
     {
         "brandId": "3",
         "colorId": "6",
+        "genderId": "3",
         "id": "47",
+        "date": "2024-01-08",
         "model": "TL8A08FMNJASR4-W",
         "price": "14500000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/t/l/tl8a08fmnjasr4_1.jpg"
     },
     {
         "brandId": "3",
-        "colorId": "",
-        "id": "48",
-        "model": " RM0356LL1WAF2W-PU",
-        "price": "5730000",
-        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/t/m/tm9a20fmrrab6r_1.jpgg"
-    },
-    {
-        "brandId": "3",
-        "colorId": "",
-        "id": "49",
-        "model": "RM6A01HLGGABR5-BR",
-        "price": "9670000",
-        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/r/m/rm6a01hlggabr5_1.jpg"
-    },
-    {
-        "brandId": "3",
         "colorId": "2",
+        "genderId": "3",
         "id": "50",
+        "date": "2024-01-09",
         "model": "PA3234HMWCAS1G-W",
         "price": "26685000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/p/a/pa3234hmwcas1g-w.jpg"
@@ -414,7 +493,9 @@
     {
         "brandId": "3",
         "colorId": "8",
+        "genderId": "3",
         "id": "51",
+        "date": "2024-01-10",
         "model": "SL9204HM1GA31G",
         "price": "10000000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/s/l/sl9204hm1ga31g.jpg"
@@ -422,7 +503,9 @@
     {
         "brandId": "3",
         "colorId": "7",
+        "genderId": "3",
         "id": "52",
+        "date": "2024-02-01",
         "model": " RM9905LL1GA81G",
         "price": "4500000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/c/a/ca7060-88l_0.jpg"
@@ -430,7 +513,9 @@
     {
         "brandId": "3",
         "colorId": "6",
+        "genderId": "3",
         "id": "53",
+        "date": "2024-02-02",
         "model": "TM5A21HMRRASR5-W",
         "price": "18170000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/t/m/tm5a21hmrrasr5_1.jpg"
@@ -438,7 +523,9 @@
     {
         "brandId": "3",
         "colorId": "11",
+        "genderId": "2",
         "id": "54",
+        "date": "2024-02-03",
         "model": "TM7A05MMCCA1R2-W",
         "price": "9380000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/t/m/tm7a05mmcca1r2_1.jpg"
@@ -446,7 +533,9 @@
     {
         "brandId": "3",
         "colorId": "6",
+        "genderId": "3",
         "id": "55",
+        "date": "2024-02-04",
         "model": "TM8A11HMRRASR5-W",
         "price": "19685000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/t/m/tm8a11hmrrasr5.jpg"
@@ -454,7 +543,9 @@
     {
         "brandId": "3",
         "colorId": "6",
+        "genderId": "3",
         "id": "56",
+        "date": "2024-02-05",
         "model": "TM8A12HMJJASR5-W",
         "price": "15090000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/t/m/tm8a12hmjjasr5_1.jpg"
@@ -462,7 +553,9 @@
     {
         "brandId": "3",
         "colorId": "8",
+        "genderId": "3",
         "id": "57",
+        "date": "2024-02-06",
         "model": "CB9A08HMBWA32W-BK",
         "price": "16120000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/c/b/cb9a08hmbwa32w_1.jpg"
@@ -470,7 +563,9 @@
     {
         "brandId": "3",
         "colorId": "7",
+        "genderId": "3",
         "id": "58",
+        "date": "2024-02-07",
         "model": "TM6A28HMWWASC5-W",
         "price": "14650000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/c/b/cb5a10mmuwa4r2.jpg"
@@ -478,7 +573,9 @@
     {
         "brandId": "3",
         "colorId": "4",
+        "genderId": "2",
         "id": "59",
+        "date": "2024-02-08",
         "model": "RM9A16FLRRAP6R-WINE",
         "price": "8210000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/r/m/rm9a16flrrap6r_2.jpg"
@@ -486,7 +583,9 @@
     {
         "brandId": "3",
         "colorId": "11",
+        "genderId": "2",
         "id": "60",
+        "date": "2024-02-09",
         "model": "RL4208LL1GA11G",
         "price": "5000000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/r/l/rl4208ll1ga11g.jpg"
@@ -494,7 +593,9 @@
     {
         "brandId": "4",
         "colorId": "5",
+        "genderId": "2",
         "id": "61",
+        "date": "2024-02-10",
         "model": "LC07806.380",
         "price": "4110000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/l/c/lc07806.380_1.jpg"
@@ -502,7 +603,9 @@
     {
         "brandId": "4",
         "colorId": "3",
+        "genderId": "2",
         "id": "62",
+        "date": "2024-03-01",
         "model": " LC07824.420",
         "price": "3850000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/l/c/lc07824.420.jpg"
@@ -510,7 +613,9 @@
     {
         "brandId": "4",
         "colorId": "1",
+        "genderId": "3",
         "id": "63",
+        "date": "2024-03-02",
         "model": "LC07903.370",
         "price": "8000000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/l/c/lc07903.370.jpg"
@@ -518,7 +623,9 @@
     {
         "brandId": "4",
         "colorId": "7",
+        "genderId": "3",
         "id": "64",
+        "date": "2024-03-03",
         "model": "LC07906.390",
         "price": "8000000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/l/c/lc07906.390.jpg"
@@ -526,7 +633,9 @@
     {
         "brandId": "4",
         "colorId": "2",
+        "genderId": "3",
         "id": "65",
+        "date": "2024-03-04",
         "model": "LC07326.350",
         "price": "3290000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/l/c/lc07326.350.jpg"
@@ -534,7 +643,9 @@
     {
         "brandId": "4",
         "colorId": "9",
+        "genderId": "2",
         "id": "66",
+        "date": "2024-03-05",
         "model": "LC07880.390",
         "price": "3470000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/l/c/lc07880.390_1.jpg"
@@ -542,7 +653,9 @@
     {
         "brandId": "4",
         "colorId": "8",
+        "genderId": "3",
         "id": "67",
+        "date": "2024-03-06",
         "model": "LC07904.454",
         "price": "7830000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/l/c/lc07904.454.jpg"
@@ -550,7 +663,9 @@
     {
         "brandId": "4",
         "colorId": "1",
+        "genderId": "3",
         "id": "68",
+        "date": "2024-03-07",
         "model": "LC07618.370",
         "price": "5300000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/l/c/lc07618.370-1.jpg"
@@ -558,7 +673,9 @@
     {
         "brandId": "4",
         "colorId": "7",
+        "genderId": "3",
         "id": "69",
+        "date": "2024-03-08",
         "model": "LC07827.390",
         "price": "3500000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/l/c/lc07827.390_1.jpg"
@@ -566,16 +683,19 @@
     {
         "brandId": "4",
         "colorId": "3",
+        "genderId": "3",
         "id": "70",
+        "date": "2024-03-09",
         "model": "LC07335.350",
         "price": "3900000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/l/c/lc07335.350.jpg"
     },
-
     {
         "brandId": "4",
         "colorId": "2",
+        "genderId": "2",
         "id": "71",
+        "date": "2024-03-10",
         "model": "LC07478.230",
         "price": "5655000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/l/c/lc07478.230.jpg"
@@ -583,7 +703,9 @@
     {
         "brandId": "4",
         "colorId": "3",
+        "genderId": "3",
         "id": "72",
+        "date": "2024-04-01",
         "model": "LC07469.350",
         "price": "7393000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/l/c/lc07469.350.jpg"
@@ -591,7 +713,9 @@
     {
         "brandId": "4",
         "colorId": "7",
+        "genderId": "3",
         "id": "73",
+        "date": "2024-04-02",
         "model": "LC07449.590",
         "price": "9870000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/l/c/lc07449.590.jpg"
@@ -599,18 +723,11 @@
     {
         "brandId": "4",
         "colorId": "1",
+        "genderId": "3",
         "id": "74",
+        "date": "2024-04-03",
         "model": "LC07486.370",
         "price": "10500000",
         "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/l/c/lc07486.370.jpg"
-    },
-    {
-        "brandId": "4",
-        "colorId": "",
-        "id": "75",
-        "model": "LC06619.330",
-        "price": "2890000",
-        "img": "https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/l/c/lc06619-330.jpg"
     }
- 
 ]

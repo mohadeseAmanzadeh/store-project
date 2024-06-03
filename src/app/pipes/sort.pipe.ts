@@ -17,7 +17,6 @@ export class SortPipe implements PipeTransform {
     }
 
     if (this.sorterListService.sortType == 'expensive') {
-     
       return items.sort((a: any , b: any) => {
         let aPrice = parseInt(a.price) 
         let bPrice = parseInt(b.price)
@@ -32,7 +31,6 @@ export class SortPipe implements PipeTransform {
     
     } 
     if (this.sorterListService.sortType == 'inexpensive') {
-    
       return items.sort((a: any , b: any) => {
         let aPrice = parseInt(a.price) 
         let bPrice = parseInt(b.price)
@@ -41,6 +39,19 @@ export class SortPipe implements PipeTransform {
         }
         if(aPrice > bPrice) {
           return 1
+        }
+        return 0    
+      });
+    } 
+    if (this.sorterListService.sortType == 'new') {
+      return items.sort((a: any , b: any) => {
+        let aDate = a.date;
+        let bDate = b.date;
+        if( aDate < bDate) {
+          return 1
+        }
+        if(aDate > bDate) {
+          return -1
         }
         return 0    
       });

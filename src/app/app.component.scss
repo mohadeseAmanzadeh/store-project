@@ -1,22 +1,24 @@
 @import '../style/components/variables.scss';
-.main {
-    font-family: $fontNormal;
-    padding-bottom: 20px;
-    height: 100vh;
-    box-sizing: border-box;
-    .main-outer {
-        padding: 16px;
-        height: 100%;
-        box-sizing: border-box;
 
-       
-           
-       
-    }
 
-}
-
-.dd {
+.container {
     height: 100vh;
     overflow-y: auto;
+
+    .main {
+        font-family: $fontNormal;
+        padding-bottom: 20px;
+        height: 100vh;
+        box-sizing: border-box;
+        .main-outer {
+            padding: 16px;
+            height: 100%;
+            box-sizing: border-box;
+    
+           
+               
+           
+        }
+    
+    }
 }

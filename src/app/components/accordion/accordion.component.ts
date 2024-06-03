@@ -14,7 +14,7 @@ import { SvgIconComponent } from 'angular-svg-icon';
 })
 export class AccordionComponent {
 
-  @Input() title: string = '';
+  @Input() titleHeader: string = '';
 
   public content: any;
 
