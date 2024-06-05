@@ -2,35 +2,21 @@
     <div class="sort-menu">
         <app-accordion titleHeader="جنسیت">
             <ul class="menu">
-                <li>بچگانه</li>
-                <li>زنانه</li>
-                <li>مردانه</li>
+                <li *ngFor="let gender of genderList" (click)="filterListByGender(gender.id)">{{gender.gender}}</li>
             </ul>
         </app-accordion>
     </div> 
     <div class="sort-menu">
         <app-accordion titleHeader="گارانتی">
             <ul class="menu">
-                <li>گارانتی 12 ماهه پوزیترون</li>
-                <li>گارانتی 18 ماهه زمان و زیور</li>
-                <li>گارانتی 24 ماهه دیجیران</li>
+                <li *ngFor="let warranty of warrantyList" (click)="filterListByWarranty(warranty.id)">{{warranty.warranty}}</li>
             </ul>
         </app-accordion>
     </div>       
     <div class="sort-menu">
         <app-accordion titleHeader="رنگ صفحه">
             <ul class="menu">
-                <li>ابی</li>
-                <li>بنفش</li>
-                <li>خاکستری</li>
-                <li>رزگلد</li>
-                <li>سورمه‌ای</li>
-                <li>صورتی</li>
-                <li>مشکی</li>
-                <li>نقره‌ای</li>
-                <li>طلایی</li>
-                <li>سبز</li>
-                <li>سفید</li>
+                <li *ngFor="let color of colorList" (click)="filterListByColor(color.id)">{{color.color}}</li>
             </ul>
         </app-accordion>
     </div>    

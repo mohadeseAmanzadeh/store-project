@@ -22,7 +22,7 @@ export class WatchListService {
   public getWatchList() {
     return new Promise((resolve, reject) => {
       if (this.watchList.length != 0) {
-        return this.watchList;
+        resolve(this.watchList);
       }
       this.dataService.getData().subscribe((watchList: any) => {
         this.watchList = this._prepareItems(watchList);
