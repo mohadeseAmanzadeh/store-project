@@ -2,13 +2,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SorterListComponent } from '../sorter-list/sorter-list.component';
-import { AccordionDirective } from '../accordion/accordion.directive';
-import { AccordionComponent } from '../accordion/accordion.component';
 import { SearchService } from '../../services/search.service';
 import { SearchPipe } from '../../pipes/search.pipe';
 import { SortPipe } from '../../pipes/sort.pipe';
 import { SorterListService } from '../../services/sorter-list.service';
 import { WatchListService } from '../../services/watch-list.service';
+import { ListFilterComponent } from '../list-filter/list-filter.component';
 
 
 
@@ -20,10 +19,9 @@ import { WatchListService } from '../../services/watch-list.service';
     SorterListComponent,
     HttpClientModule,
     CommonModule,
-    AccordionDirective,
-    AccordionComponent,
     SearchPipe,
-    SortPipe
+    SortPipe,
+    ListFilterComponent
   ],
   templateUrl: './watch-list.component.html',
   styleUrl: './watch-list.component.scss'

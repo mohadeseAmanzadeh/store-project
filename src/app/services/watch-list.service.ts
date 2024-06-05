@@ -39,9 +39,8 @@ export class WatchListService {
       watch.genderType = GenderList[watch.genderId];
       watch.warrantyType = WarrantyList[watch.warrantyId];
       this.watchList.push(watch);
-      console.log('aaaaaa', this.watchList)
     });
-    return watchList;
+    return this.watchList;
   }
 
 

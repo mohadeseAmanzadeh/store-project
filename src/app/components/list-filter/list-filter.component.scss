@@ -1,0 +1,16 @@
+.sort-list {
+    width: 300px;
+    // display: inline-block;
+    float: right;
+    position: relative;
+    top: 50px;
+    right: 66px;
+
+    .menu {
+        padding-right: 0px;
+        li {
+            list-style: none;
+            line-height: 35px;
+        }
+    }
+}
