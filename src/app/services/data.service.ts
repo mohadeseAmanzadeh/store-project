@@ -13,18 +13,18 @@ export class DataService {
       .get('./assets/json/list.json',)
   }
 
-  public getList() {
-    return  this._http
-    .get('./assets/json/brandId.json',)
-  }
+  // public getList() {
+  //   return  this._http
+  //   .get('./assets/json/brandId.json',)
+  // }
 
-  public getColorList() {
-    return  this._http
-    .get('./assets/json/pageColor.json',)
-  }
+  // public getColorList() {
+  //   return  this._http
+  //   .get('./assets/json/pageColor.json',)
+  // }
 
-  public getGenderList() {
-    return  this._http
-    .get('./assets/json/gender.json',)
-  }
+  // public getGenderList() {
+  //   return  this._http
+  //   .get('./assets/json/gender.json',)
+  // }
 }
