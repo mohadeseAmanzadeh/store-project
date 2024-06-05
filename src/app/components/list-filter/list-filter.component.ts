@@ -17,6 +17,7 @@ import { CommonModule } from '@angular/common';
 })
 export class ListFilterComponent implements OnInit{
 
+  public watchListData: any = [];
   @Input() watchList: any = [];
   @Output() newWatchList = new EventEmitter();
 
@@ -103,20 +104,19 @@ export class ListFilterComponent implements OnInit{
   ngOnInit(): void {
   }
 
-  public filterListByGender(id: any) {
-    this.watchList = [];
+  public filterList(id: any , type: any) {
+    this.watchListData = [];
     this.watchList.forEach((val: any) => {
-      if (id == val.genderId) {
-        this.newWatchList.emit();
+      if (type == 'gender' && id == val.genderId) {
+        this.watchListData.push(val);
+      }
+      if (type == 'color' && id == val.genderId) {
+        this.watchListData.push(val);
+      }
+      if (type == 'warranty' && id == val.genderId) {
+        this.watchListData.push(val);
       }
     })
-  }
- 
-  public filterListByWarranty(id: any) {
-    
-  }
- 
-  public filterListByColor(id: any) {
-    
+    this.newWatchList.emit(this.watchListData);
   }
 }

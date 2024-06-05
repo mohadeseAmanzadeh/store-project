@@ -2,21 +2,21 @@
     <div class="sort-menu">
         <app-accordion titleHeader="جنسیت">
             <ul class="menu">
-                <li *ngFor="let gender of genderList" (click)="filterListByGender(gender.id)">{{gender.gender}}</li>
+                <li *ngFor="let gender of genderList" (click)="filterList(gender.id, 'gender')">{{gender.gender}}</li>
             </ul>
         </app-accordion>
     </div> 
     <div class="sort-menu">
         <app-accordion titleHeader="گارانتی">
             <ul class="menu">
-                <li *ngFor="let warranty of warrantyList" (click)="filterListByWarranty(warranty.id)">{{warranty.warranty}}</li>
+                <li *ngFor="let warranty of warrantyList" (click)="filterList(warranty.id, 'warranty')">{{warranty.warranty}}</li>
             </ul>
         </app-accordion>
     </div>       
     <div class="sort-menu">
         <app-accordion titleHeader="رنگ صفحه">
             <ul class="menu">
-                <li *ngFor="let color of colorList" (click)="filterListByColor(color.id)">{{color.color}}</li>
+                <li *ngFor="let color of colorList" (click)="filterList(color.id, 'color')">{{color.color}}</li>
             </ul>
         </app-accordion>
     </div>    
