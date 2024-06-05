@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
 import { BehaviorSubject, Observable, Subject } from "rxjs";
-import { SorterListInterface } from "../interface/data.interface";
+import { SorterListInterface } from "../data/data.api";
 
 
 

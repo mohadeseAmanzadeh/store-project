@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { SorterListService } from '../../services/sorter-list.service';
-import { SorterListInterface } from '../../interface/data.interface';
+import { SorterListInterface } from '../../data/data.api';
 import { Subscription } from 'rxjs';
 
 @Component({
