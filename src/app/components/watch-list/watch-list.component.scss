@@ -14,16 +14,15 @@
     
     .sort-list {
         width: 300px;
-        display: inline-block;
+        // display: inline-block;
         float: right;
         position: relative;
         top: 50px;
-        right: 150px;
+        right: 66px;
     }
     
     .list {
-        width: calc(100% - 580px);
-        display: inline-block;
+        width: calc(100% - 540px);
         margin-right: 60px;
         margin-left: 60px;
         display: flex;
