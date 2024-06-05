@@ -110,10 +110,10 @@ export class ListFilterComponent implements OnInit{
       if (type == 'gender' && id == val.genderId) {
         this.watchListData.push(val);
       }
-      if (type == 'color' && id == val.genderId) {
+      if (type == 'color' && id == val.colorId) {
         this.watchListData.push(val);
       }
-      if (type == 'warranty' && id == val.genderId) {
+      if (type == 'warranty' && id == val.warrantyId) {
         this.watchListData.push(val);
       }
     })
