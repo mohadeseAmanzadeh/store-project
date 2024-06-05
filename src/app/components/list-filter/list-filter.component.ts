@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { AccordionDirective } from '../accordion/accordion.directive';
 import { AccordionComponent } from '../accordion/accordion.component';
 import { WatchListService } from '../../services/watch-list.service';
@@ -17,7 +17,9 @@ import { CommonModule } from '@angular/common';
 })
 export class ListFilterComponent implements OnInit{
 
-  public data: any = [];
+  @Input() watchList: any = [];
+  @Output() newWatchList = new EventEmitter();
+
   public genderList = [
     {
       id: 1,
@@ -99,23 +101,22 @@ export class ListFilterComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    this.watchListService.getWatchList().then((resp: any) => {
-      this.data = resp;
-    });
   }
 
   public filterListByGender(id: any) {
-    let filterList = this.data;
-    
-  
+    this.watchList = [];
+    this.watchList.forEach((val: any) => {
+      if (id == val.genderId) {
+        this.newWatchList.emit();
+      }
+    })
   }
  
-
   public filterListByWarranty(id: any) {
-
+    
   }
  
   public filterListByColor(id: any) {
-
+    
   }
 }
