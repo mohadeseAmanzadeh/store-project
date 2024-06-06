@@ -30,6 +30,8 @@ export class WatchListComponent implements OnInit{
 
   public watchList: any = [];
 
+  public watch: any;
+
   constructor(
     private watchListService: WatchListService,
     public searchService: SearchService,
@@ -42,4 +44,5 @@ export class WatchListComponent implements OnInit{
       this.watchList = resp;
     }) 
   }
+
 }

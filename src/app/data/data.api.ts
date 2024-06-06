@@ -60,6 +60,10 @@ export const WarrantyList: any = {
 }
 
 
+export const OriginalityList: any = {
+    1: 'ژاپن',
+}
+
 
 
 

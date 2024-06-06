@@ -11,6 +11,21 @@
         li {
             list-style: none;
             line-height: 35px;
+
+            .icon-box {
+                width: 20px;
+                height: 20px;
+                float: left;
+                svg-icon {
+                    width: 14px;
+                    height: 14px;
+
+                    svg {
+                        width: 14px;
+                        height: 14px;
+                    }
+                }
+            }
         }
     }
 }

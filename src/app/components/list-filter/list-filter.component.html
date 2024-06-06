@@ -2,21 +2,42 @@
     <div class="sort-menu">
         <app-accordion titleHeader="جنسیت">
             <ul class="menu">
-                <li *ngFor="let gender of genderList" (click)="filterList(gender.id, 'gender')">{{gender.gender}}</li>
+                <li *ngFor="let gender of genderList" (click)="filterList(gender.id, 'gender')">
+                    <span>
+                        {{gender.gender}}
+                    </span>
+                    <span class="icon-box" (click)="removeFilter()">
+                        <svg-icon src="/assets/svg/close.svg"></svg-icon>
+                    </span>
+                </li>
             </ul>
         </app-accordion>
     </div> 
     <div class="sort-menu">
         <app-accordion titleHeader="گارانتی">
             <ul class="menu">
-                <li *ngFor="let warranty of warrantyList" (click)="filterList(warranty.id, 'warranty')">{{warranty.warranty}}</li>
+                <li *ngFor="let warranty of warrantyList" (click)="filterList(warranty.id, 'warranty')" >
+                    <span>
+                        {{warranty.warranty}}
+                    </span>
+                    <!-- <span class="icon-box">
+                        <svg-icon src="/assets/svg/close.svg" (click)="removeFilter()"></svg-icon>
+                    </span> -->
+                </li>
             </ul>
         </app-accordion>
     </div>       
     <div class="sort-menu">
         <app-accordion titleHeader="رنگ صفحه">
             <ul class="menu">
-                <li *ngFor="let color of colorList" (click)="filterList(color.id, 'color')">{{color.color}}</li>
+                <li *ngFor="let color of colorList" (click)="filterList(color.id, 'color')">
+                    <span>
+                        {{color.color}}
+                    </span>
+                    <!-- <span class="icon-box">
+                        <svg-icon src="/assets/svg/close.svg" (click)="removeFilter()"></svg-icon>
+                    </span>     -->
+                </li>
             </ul>
         </app-accordion>
     </div>    
