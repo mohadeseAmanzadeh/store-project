@@ -37,7 +37,7 @@
 		background-color: #fff;
 		display: inline-block;
 		border: 1px solid #d1d4dc;
-		border-radius: 5%;
+		border-radius: 15%;
 		vertical-align: middle;
 		text-align: center;
 		position: relative;
@@ -45,8 +45,8 @@
 
 		svg-icon {
 			position: absolute;
-			left: -5px;
-			top: -5px;
+			left: -4px;
+			top: -4px;
 			display: none;
 
 			svg {

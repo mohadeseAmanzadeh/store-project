@@ -8,6 +8,7 @@ import { BrandList, ColorList, WarrantyList, GenderList } from '../data/data.api
 export class WatchListService {
 
   public watchList: any = [];
+  public watchListCopy: any = [];
   public brandList: any = [];
   public colorList: any = [];
   public genderList: any = [];
@@ -26,6 +27,7 @@ export class WatchListService {
       }
       this.dataService.getData().subscribe((watchList: any) => {
         this.watchList = this._prepareItems(watchList);
+        this.watchListCopy = this.watchList;
       })
       resolve(this.watchList);
     })

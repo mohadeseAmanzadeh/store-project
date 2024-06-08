@@ -29,11 +29,8 @@ import { FilterService } from '../../services/filter.service';
 })
 export class WatchListComponent implements OnInit{
 
-  public watchList: any = [];
-
-
   constructor(
-    private watchListService: WatchListService,
+    public watchListService: WatchListService,
     public searchService: SearchService,
     public sorterListService: SorterListService,
     public filterService : FilterService,
@@ -41,8 +38,7 @@ export class WatchListComponent implements OnInit{
 
   ngOnInit(): void {
     this.watchListService.getWatchList().then((resp: any) => {
-      this.watchList = resp;
-      this.filterService.watchListClone = this.watchList;
+    
     }) 
   }
 

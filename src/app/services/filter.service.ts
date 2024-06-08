@@ -1,5 +1,6 @@
 import { Injectable, Input, Output } from '@angular/core';
 import { EventEmitter } from 'node:stream';
+import { WatchListService } from './watch-list.service';
 
 
 @Injectable({
@@ -8,6 +9,9 @@ import { EventEmitter } from 'node:stream';
 export class FilterService {
 
 
+    constructor(
+        private watchListService: WatchListService,
+    ) {}
 
   public genderList = [
     {
@@ -101,28 +105,46 @@ export class FilterService {
   }
   ]
 
-  public watchListData: any = [];
-  public watchListClone: any = [];
   
-  public filterList() {
+  public watchListData: any = [];
+//   public watchListClone: any = [];
+  
+  public filterList(type: any) {
     let hasFilter = false;
     this.watchListData = [];
-    this.watchListClone.forEach((val: any) => {
-      this.genderList.forEach((gender: any)=>{
-        if ( gender.active && val.genderId == gender.id ){
-            hasFilter = true;
-            this.watchListData.push(val);
+    this.watchListService.watchListCopy.forEach((val: any) => {
+        if (type == 'gender') {
+            
+            this.genderList.forEach((gender: any)=>{
+              if (type == 'gender' && gender.active && val.genderId == gender.id ){
+                  hasFilter = true;
+                  this.watchListData.push(val);
+              }
+            })
         }
-      })
+        if (type == 'color') {
+            
+            this.colorList.forEach((color: any)=>{
+              if ( color.active && val.colorId == color.id ){
+                  hasFilter = true;
+                  this.watchListData.push(val);
+              }
+            })
+        }
+        if (type == 'warranty') {
+            this.warrantyList.forEach((warranty: any)=>{
+                if ( warranty.active && val.warrantyId == warranty.id ){
+                    hasFilter = true;
+                    this.watchListData.push(val);
+                }
+              })
+        }
     })
 
-    console.log(this.watchListClone, 'this.watchListClone');
-    console.log(this.watchListData, 'this.watchListData');
-    
-
-    if (!hasFilter){
-      this.watchListData = this.watchListClone;
-    }
+    this.watchListService.watchList = !hasFilter?this.watchListService.watchListCopy:this.watchListData;
+    // if (!hasFilter){
+    //   this.watchListData = this.watchListClone;
+    // }
     // this.newWatchList.emit(this.watchListData);
   }
 
