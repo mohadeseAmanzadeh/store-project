@@ -2,13 +2,14 @@
     <div class="sort-menu">
         <app-accordion titleHeader="جنسیت">
             <ul class="menu">
-                <li *ngFor="let gender of genderList" (click)="filterList(gender.id, 'gender')">
+                <li *ngFor="let gender of filterService.genderList" (click)="gender.active= !gender.active; filterList()">
+                    <app-span-check-box></app-span-check-box>
                     <span>
                         {{gender.gender}}
                     </span>
-                    <span class="icon-box" (click)="removeFilter()">
+                    <!-- <span class="icon-box" *ngIf="gender.active">
                         <svg-icon src="/assets/svg/close.svg"></svg-icon>
-                    </span>
+                    </span> -->
                 </li>
             </ul>
         </app-accordion>
@@ -16,12 +17,13 @@
     <div class="sort-menu">
         <app-accordion titleHeader="گارانتی">
             <ul class="menu">
-                <li *ngFor="let warranty of warrantyList" (click)="filterList(warranty.id, 'warranty')" >
+                <li *ngFor="let warranty of filterService.warrantyList" (click)="warranty.active= !warranty.active; filterList()" >
+                    <app-span-check-box></app-span-check-box>
                     <span>
                         {{warranty.warranty}}
                     </span>
-                    <!-- <span class="icon-box">
-                        <svg-icon src="/assets/svg/close.svg" (click)="removeFilter()"></svg-icon>
+                    <!-- <span class="icon-box" *ngIf="warranty.active">
+                        <svg-icon src="/assets/svg/close.svg"></svg-icon>
                     </span> -->
                 </li>
             </ul>
@@ -30,12 +32,13 @@
     <div class="sort-menu">
         <app-accordion titleHeader="رنگ صفحه">
             <ul class="menu">
-                <li *ngFor="let color of colorList" (click)="filterList(color.id, 'color')">
+                <li *ngFor="let color of filterService.colorList" (click)="color.active= !color.active; filterList()">
+                    <app-span-check-box></app-span-check-box>
                     <span>
                         {{color.color}}
                     </span>
-                    <!-- <span class="icon-box">
-                        <svg-icon src="/assets/svg/close.svg" (click)="removeFilter()"></svg-icon>
+                    <!-- <span class="icon-box" *ngIf="color.active">
+                        <svg-icon src="/assets/svg/close.svg"></svg-icon>
                     </span>     -->
                 </li>
             </ul>

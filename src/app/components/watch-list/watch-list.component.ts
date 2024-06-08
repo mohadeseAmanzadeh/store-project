@@ -8,6 +8,7 @@ import { SortPipe } from '../../pipes/sort.pipe';
 import { SorterListService } from '../../services/sorter-list.service';
 import { WatchListService } from '../../services/watch-list.service';
 import { ListFilterComponent } from '../list-filter/list-filter.component';
+import { FilterService } from '../../services/filter.service';
 
 
 
@@ -35,13 +36,14 @@ export class WatchListComponent implements OnInit{
   constructor(
     private watchListService: WatchListService,
     public searchService: SearchService,
-    public sorterListService: SorterListService
+    public sorterListService: SorterListService,
+    public filterService : FilterService,
   ) {}
 
   ngOnInit(): void {
-
     this.watchListService.getWatchList().then((resp: any) => {
       this.watchList = resp;
+      this.watch = this.watchList;
     }) 
   }
 

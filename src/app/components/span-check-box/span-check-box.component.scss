@@ -1,0 +1,59 @@
+.span-check-style {
+	display: inline-block;
+	height: 100%;
+	// width: 14px;
+
+	&.active {
+		border: none;
+
+		.check-box {
+			svg-icon {
+				display: inline-block;
+
+				svg {
+					color: #2196f3;
+				}
+			}
+		}
+	}
+
+	&.small {
+		.check-box {
+			width: 16px;
+			height: 16px;
+
+			svg-icon {
+				svg {
+					width: 24px;
+					height: 24px;
+				}
+			}
+		}
+	}
+
+	.check-box {
+		width: 17px;
+		height: 17px;
+		background-color: #fff;
+		display: inline-block;
+		border: 1px solid #d1d4dc;
+		border-radius: 5%;
+		vertical-align: middle;
+		text-align: center;
+		position: relative;
+		box-sizing: border-box;
+
+		svg-icon {
+			position: absolute;
+			left: -5px;
+			top: -5px;
+			display: none;
+
+			svg {
+				height: 24px;
+				width: 24px;
+				fill: #2196f3;
+			}
+		}
+	}
+}
