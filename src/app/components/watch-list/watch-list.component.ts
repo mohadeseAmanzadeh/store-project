@@ -31,7 +31,6 @@ export class WatchListComponent implements OnInit{
 
   public watchList: any = [];
 
-  public watch: any;
 
   constructor(
     private watchListService: WatchListService,
@@ -43,7 +42,7 @@ export class WatchListComponent implements OnInit{
   ngOnInit(): void {
     this.watchListService.getWatchList().then((resp: any) => {
       this.watchList = resp;
-      this.watch = this.watchList;
+      this.filterService.watchListClone = this.watchList;
     }) 
   }
 

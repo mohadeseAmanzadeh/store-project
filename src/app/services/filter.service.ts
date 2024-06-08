@@ -7,7 +7,7 @@ import { EventEmitter } from 'node:stream';
 })
 export class FilterService {
 
-  
+
 
   public genderList = [
     {
@@ -102,23 +102,30 @@ export class FilterService {
   ]
 
   public watchListData: any = [];
+  public watchListClone: any = [];
   
   public filterList() {
-    // let hasFilter = false;
-    // this.watchListData = [];
-    // this.watchList.forEach((val: any) => {
-    //   this.genderList.forEach((gender: any)=>{
-    //     if ( gender.active && val.genderId == gender.id ){
-    //         hasFilter = true;
-    //         this.watchListData.push(val);
-    //     }
-    //   })
-    // })
+    let hasFilter = false;
+    this.watchListData = [];
+    this.watchListClone.forEach((val: any) => {
+      this.genderList.forEach((gender: any)=>{
+        if ( gender.active && val.genderId == gender.id ){
+            hasFilter = true;
+            this.watchListData.push(val);
+        }
+      })
+    })
 
-    // if (!hasFilter){
-    //   this.watchListData = this.watchList;
-    // }
+    console.log(this.watchListClone, 'this.watchListClone');
+    console.log(this.watchListData, 'this.watchListData');
+    
+
+    if (!hasFilter){
+      this.watchListData = this.watchListClone;
+    }
     // this.newWatchList.emit(this.watchListData);
   }
+
+
 
 }

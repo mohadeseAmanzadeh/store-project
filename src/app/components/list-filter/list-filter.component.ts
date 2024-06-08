@@ -25,9 +25,12 @@ export class ListFilterComponent implements OnInit{
 
   // public watchListData: any = [];
  
+  public warranty: boolean = false;
+  public color: boolean = false;
+  public gender: boolean = false;
 
-  @Input() watchList: any = [];
-  @Output() newWatchList = new EventEmitter();
+  // @Input() watchList: any = [];
+  // @Output() newWatchList = new EventEmitter();
 
   // public genderList = [
   //   {
@@ -149,5 +152,17 @@ export class ListFilterComponent implements OnInit{
   // }
 
 
+  public filterListByGender(gender: any) {
+    gender.active= !gender.active; 
+    this.filterService.filterList()
+  }
  
+  public filterListByWarranty(warranty: any) {
+    warranty.active= !warranty.active; 
+    this.filterService.filterList()
+  }
+  public filterListByColor(color: any) {
+    color.active= !color.active; 
+    this.filterService.filterList()
+  }
 }
