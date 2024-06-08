@@ -109,11 +109,11 @@ export class FilterService {
   public watchListData: any = [];
 //   public watchListClone: any = [];
   
-  public filterList(type: any) {
+  public filterList(type: any, id: any) {
     let hasFilter = false;
     this.watchListData = [];
     this.watchListService.watchListCopy.forEach((val: any) => {
-        if (type == 'gender') {
+        if (type == 'gender' && id == val.genderId) {
             
             this.genderList.forEach((gender: any)=>{
               if (type == 'gender' && gender.active && val.genderId == gender.id ){
@@ -122,7 +122,7 @@ export class FilterService {
               }
             })
         }
-        if (type == 'color') {
+        if (type == 'color' && id == val.colorId) {
             
             this.colorList.forEach((color: any)=>{
               if ( color.active && val.colorId == color.id ){
@@ -131,7 +131,7 @@ export class FilterService {
               }
             })
         }
-        if (type == 'warranty') {
+        if (type == 'warranty' && id == val.warrantyId) {
             this.warrantyList.forEach((warranty: any)=>{
                 if ( warranty.active && val.warrantyId == warranty.id ){
                     hasFilter = true;

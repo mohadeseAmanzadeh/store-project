@@ -154,15 +154,15 @@ export class ListFilterComponent implements OnInit{
 
   public filterListByGender(gender: any) {
     gender.active= !gender.active; 
-    this.filterService.filterList('gender')
+    this.filterService.filterList('gender', gender.id)
   }
  
   public filterListByWarranty(warranty: any) {
     warranty.active= !warranty.active; 
-    this.filterService.filterList('warranty')
+    this.filterService.filterList('warranty' , warranty.id)
   }
   public filterListByColor(color: any) {
     color.active= !color.active; 
-    this.filterService.filterList('color')
+    this.filterService.filterList('color', color.id)
   }
 }
