@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { WatchListService } from '../../services/watch-list.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-watch',
@@ -14,6 +15,7 @@ export class WatchComponent  implements OnInit{
   
   constructor(
     private watchListService: WatchListService,
+    private route: ActivatedRoute,
   ) {}
 
   ngOnInit(): void {

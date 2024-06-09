@@ -9,6 +9,7 @@ import { SorterListService } from '../../services/sorter-list.service';
 import { WatchListService } from '../../services/watch-list.service';
 import { ListFilterComponent } from '../list-filter/list-filter.component';
 import { FilterService } from '../../services/filter.service';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -22,7 +23,8 @@ import { FilterService } from '../../services/filter.service';
     CommonModule,
     SearchPipe,
     SortPipe,
-    ListFilterComponent
+    ListFilterComponent,
+    RouterModule
   ],
   templateUrl: './watch-list.component.html',
   styleUrl: './watch-list.component.scss'
@@ -41,5 +43,7 @@ export class WatchListComponent implements OnInit{
     
     }) 
   }
+
+  
 
 }
