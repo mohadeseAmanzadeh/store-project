@@ -107,45 +107,54 @@ export class FilterService {
 
   
   public watchListData: any = [];
-//   public watchListClone: any = [];
-  
-  public filterList(type: any, id: any) {
-    let hasFilter = false;
+  public filterList(type: any) {
+    let watchlist = this.watchListService.watchListCopy;
+    let hasGenderFilter = false;
     this.watchListData = [];
-    this.watchListService.watchListCopy.forEach((val: any) => {
-        if (type == 'gender' && id == val.genderId) {
-            
-            this.genderList.forEach((gender: any)=>{
-              if (type == 'gender' && gender.active && val.genderId == gender.id ){
-                  hasFilter = true;
-                  this.watchListData.push(val);
-              }
-            })
-        }
-        if (type == 'color' && id == val.colorId) {
-            
-            this.colorList.forEach((color: any)=>{
-              if ( color.active && val.colorId == color.id ){
-                  hasFilter = true;
-                  this.watchListData.push(val);
-              }
-            })
-        }
-        if (type == 'warranty' && id == val.warrantyId) {
-            this.warrantyList.forEach((warranty: any)=>{
-                if ( warranty.active && val.warrantyId == warranty.id ){
-                    hasFilter = true;
+    watchlist.forEach((val: any) => {              
+        this.genderList.forEach((gender: any)=>{
+            if ( gender.active ){
+                hasGenderFilter = true;
+                if(val.genderId == gender.id){
                     this.watchListData.push(val);
                 }
-              })
-        }
+               
+            }
+        })
+           
     })
+    watchlist = hasGenderFilter?this.watchListData: watchlist;
+    let hasColorFilter = false;
+    this.watchListData = [];
+    watchlist.forEach((val: any) => {     
+        this.colorList.forEach((color: any)=>{
+            if ( color.active ){
+                hasColorFilter = true;
+                if(val.colorId == color.id){
+                    this.watchListData.push(val);
+                }
+               
+            }
+        })
+           
+    })
+    watchlist = hasColorFilter?this.watchListData: watchlist;
+    let hasWarrantyFilter = false;
+    this.watchListData = [];
+    watchlist.forEach((val: any) => { 
+        this.warrantyList.forEach((warranty: any)=>{
+            if ( warranty.active ){
+                hasWarrantyFilter = true;
+                if(val.warrantyId == warranty.id){
+                    this.watchListData.push(val);
+                }
+            }
+        })    
+    })
+    watchlist = hasWarrantyFilter?this.watchListData: watchlist;
+    
+    this.watchListService.watchList = watchlist;
 
-    this.watchListService.watchList = !hasFilter?this.watchListService.watchListCopy:this.watchListData;
-    // if (!hasFilter){
-    //   this.watchListData = this.watchListClone;
-    // }
-    // this.newWatchList.emit(this.watchListData);
   }
 
 

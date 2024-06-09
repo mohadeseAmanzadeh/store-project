@@ -153,16 +153,25 @@ export class ListFilterComponent implements OnInit{
 
 
   public filterListByGender(gender: any) {
+    // this.filterService.genderList.forEach((value: any) => {
+    //   value.active = (gender.id == value.id)
+    // })
     gender.active= !gender.active; 
-    this.filterService.filterList('gender', gender.id)
+    this.filterService.filterList('gender')
   }
  
   public filterListByWarranty(warranty: any) {
+    // this.filterService.warrantyList.forEach((value: any) => {
+    //   value.active = (warranty.id == value.id)
+    // })
     warranty.active= !warranty.active; 
-    this.filterService.filterList('warranty' , warranty.id)
+    this.filterService.filterList('warranty')
   }
   public filterListByColor(color: any) {
+    // this.filterService.colorList.forEach((value: any) => {
+    //   value.active = (color.id == value.id)
+    // })
     color.active= !color.active; 
-    this.filterService.filterList('color', color.id)
+    this.filterService.filterList('color')
   }
 }

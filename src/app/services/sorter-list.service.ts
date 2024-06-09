@@ -14,7 +14,7 @@ export class SorterListService {
 		{
 		  sortTitle: 'جدیدترین',
 		  type: 'new',
-		  active: false,
+		  active: true,
 		  id: 1
 		},
 		{
