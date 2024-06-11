@@ -6,13 +6,37 @@
            <img src="{{watch.img}}" alt="">
         </div>
         <div class="information-table">
-            <div class="table-tr" *ngFor="let item of list">
+            <div class="table-tr">
                 <div class="title-table">
-                    
+                    برند
                 </div>
                 <div class="content">
-                    
+                    {{watch.brandTitle}}
                 </div>
             </div>
+            <div class="table-tr">
+                <div class="title-table">
+                    رنگ صفحه
+                </div>
+                <div class="content">
+                    {{watch.colorNamne}}
+                </div>
+            </div>
+            <div class="table-tr">
+                <div class="title-table">
+                    گارانتی
+                </div>
+                <div class="content">
+                    {{watch.warrantyType}}
+                </div>
+            </div>  
+            <div class="table-tr">
+                <div class="title-table">
+                    جنسیت
+                </div>
+                <div class="content">
+                    {{watch.genderType}}
+                </div>
+            </div> 
         </div>
 </div>
