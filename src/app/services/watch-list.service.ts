@@ -7,8 +7,8 @@ import { BrandList, ColorList, WarrantyList, GenderList } from '../data/data.api
 })
 export class WatchListService {
 
-  public watchList: any = [];
-  public watchListCopy: any = [];
+  private watchList: any = [];
+  private watchListCopy: any = [];
   public brandList: any = [];
   public colorList: any = [];
   public genderList: any = [];
@@ -34,7 +34,13 @@ export class WatchListService {
   }
 
    public getWatch(watchId: any ) {
-    return this.watchList.filter((item: any) => item.id === watchId);
+    return new Promise((resolve, reject) => {
+      let item:any = this.getWatchList().then((res:any)=>{
+          item = res.filter((item: any) => item.id === watchId);
+          item = item?item[0]:null
+          resolve(item);
+      })
+  });
 }
   private _prepareItems(watchList: any) {
     this.watchList = [];

@@ -31,6 +31,8 @@ import { RouterModule } from '@angular/router';
 })
 export class WatchListComponent implements OnInit{
 
+  public watchList: any = [];
+ 
   constructor(
     public watchListService: WatchListService,
     public searchService: SearchService,
@@ -40,7 +42,7 @@ export class WatchListComponent implements OnInit{
 
   ngOnInit(): void {
     this.watchListService.getWatchList().then((resp: any) => {
-    
+      this.watchList = resp;
     }) 
   }
 

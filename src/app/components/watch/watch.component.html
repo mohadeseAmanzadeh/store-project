@@ -1,11 +1,14 @@
-<div class="watch-box" >
+<div class="message" *ngIf="!watch">
+    محصول مورد نظر یافت نشد
+</div>
+<div class="watch-box" *ngIf="watch">
         <div class="product-img-box">
-           <img src="" alt="">
+           <img src="{{watch.img}}" alt="">
         </div>
         <div class="information-table">
-            <div class="table">
+            <div class="table-tr" *ngFor="let item of list">
                 <div class="title-table">
-                    ساعت
+                    
                 </div>
                 <div class="content">
                     

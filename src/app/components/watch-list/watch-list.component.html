@@ -2,7 +2,7 @@
 <div class="watchList-container">
     <app-sorter-list></app-sorter-list>
 <div class="list">  
-    <div class="card" *ngFor="let item of watchListService.watchList | searchFilter:searchService.inputSearch | sort:sorterListService.sortType">
+    <div class="card" *ngFor="let item of watchList | searchFilter:searchService.inputSearch | sort:sorterListService.sortType">
         <a class="product-image" routerLink="watch/{{item.id}}">
             <img src="{{item.img}}" alt="" > 
         </a>  
