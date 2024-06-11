@@ -33,6 +33,9 @@ export class WatchListService {
     })
   }
 
+   public getWatch(watchId: any ) {
+    return this.watchList.filter((item: any) => item.id === watchId);
+}
   private _prepareItems(watchList: any) {
     this.watchList = [];
     watchList.forEach((watch: any) => {
@@ -44,6 +47,5 @@ export class WatchListService {
     });
     return this.watchList;
   }
-
 
 }
