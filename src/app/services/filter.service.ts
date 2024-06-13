@@ -9,6 +9,7 @@ import { WatchListService } from './watch-list.service';
 export class FilterService {
 
 
+    
     constructor(
         private watchListService: WatchListService,
     ) {}
@@ -105,55 +106,62 @@ export class FilterService {
   }
   ]
 
+
   
   public watchListData: any = [];
   public filterList(type: any) {
-    let watchlist = this.watchListService.watchListCopy;
-    let hasGenderFilter = false;
-    this.watchListData = [];
-    watchlist.forEach((val: any) => {              
-        this.genderList.forEach((gender: any)=>{
-            if ( gender.active ){
-                hasGenderFilter = true;
-                if(val.genderId == gender.id){
-                    this.watchListData.push(val);
+    this.watchListService.getWatchList().then((resp: any) => {
+        let watchListCopy = resp;
+        let watchList = resp;
+
+        let watchlist = watchListCopy;
+        let hasGenderFilter = false;
+        this.watchListData = [];
+        watchlist.forEach((val: any) => {              
+            this.genderList.forEach((gender: any)=>{
+                if ( gender.active ){
+                    hasGenderFilter = true;
+                    if(val.genderId == gender.id){
+                        this.watchListData.push(val);
+                    }
+                   
                 }
+            })
                
-            }
         })
-           
-    })
-    watchlist = hasGenderFilter?this.watchListData: watchlist;
-    let hasColorFilter = false;
-    this.watchListData = [];
-    watchlist.forEach((val: any) => {     
-        this.colorList.forEach((color: any)=>{
-            if ( color.active ){
-                hasColorFilter = true;
-                if(val.colorId == color.id){
-                    this.watchListData.push(val);
+        watchlist = hasGenderFilter?this.watchListData: watchlist;
+        let hasColorFilter = false;
+        this.watchListData = [];
+        watchlist.forEach((val: any) => {     
+            this.colorList.forEach((color: any)=>{
+                if ( color.active ){
+                    hasColorFilter = true;
+                    if(val.colorId == color.id){
+                        this.watchListData.push(val);
+                    }
+                   
                 }
+            })
                
-            }
         })
-           
-    })
-    watchlist = hasColorFilter?this.watchListData: watchlist;
-    let hasWarrantyFilter = false;
-    this.watchListData = [];
-    watchlist.forEach((val: any) => { 
-        this.warrantyList.forEach((warranty: any)=>{
-            if ( warranty.active ){
-                hasWarrantyFilter = true;
-                if(val.warrantyId == warranty.id){
-                    this.watchListData.push(val);
+        watchlist = hasColorFilter?this.watchListData: watchlist;
+        let hasWarrantyFilter = false;
+        this.watchListData = [];
+        watchlist.forEach((val: any) => { 
+            this.warrantyList.forEach((warranty: any)=>{
+                if ( warranty.active ){
+                    hasWarrantyFilter = true;
+                    if(val.warrantyId == warranty.id){
+                        this.watchListData.push(val);
+                    }
                 }
-            }
-        })    
-    })
-    watchlist = hasWarrantyFilter?this.watchListData: watchlist;
-    
-    this.watchListService.watchList = watchlist;
+            })    
+        })
+        watchlist = hasWarrantyFilter?this.watchListData: watchlist;
+        
+        watchList = watchlist;
+      })
+  
 
   }
 
