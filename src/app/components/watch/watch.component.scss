@@ -1,3 +1,4 @@
+@import '../../../style/components/variables.scss';
 .watch-box {
     width: calc(100% - 140px);
     height: 100%;
@@ -25,13 +26,13 @@
             line-height: 60px;
 
             &:not(:first-child) {
-                border-top: 1px solid #eee;
+                border-top: 1px solid $borderTable;
             }
 
             .title-table {
                 width: 30%;
                 box-sizing: border-box;
-                border-left: 1px solid #eee;
+                border-left: 1px solid $borderTable;
                 float: right;
                 height: 100%;
                 text-align: right;
@@ -43,7 +44,7 @@
                 width: 70%;
                 box-sizing: border-box;
                 height: 100%;
-                // color: #eee;
+                color: $contentTable;
                 text-align: right;
                 padding-right: 15px;
             }

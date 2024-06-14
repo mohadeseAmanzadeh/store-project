@@ -88,6 +88,36 @@
                         font-size: 14px;
                     }
                 }
+                .icon-box {
+                    .add-to-cart {
+                        float: right;
+                        border: 1px solid $border;
+                        outline: none;
+                        border-radius: 50px;
+                        text-align: center;
+                        svg-icon {
+                            display: inline-block;
+                            height: 24px;
+                            svg {
+                                height: 24px;
+                                width: 24px;
+                                color: $contentTable;
+                            }
+                        }
+                    }
+
+                   .like-button  {
+                    float: right;
+                        svg-icon {
+                            height: 24px;
+                            display: inline-block;
+                            svg {
+                                height: 24px;
+                                width: 24px;
+                            }
+                        }
+                   }
+                }
             }
         }
     }

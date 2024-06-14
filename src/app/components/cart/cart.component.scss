@@ -1,0 +1,18 @@
+@import '../../../style/components/variables.scss';
+.cart {
+    direction: rtl;
+    .cart-box {
+        border: 1px solid $borderTable;
+        width: 100%;
+        height: auto;
+        .header-box {
+            .title-header {
+                float: right;
+                &.product-name {
+                    margin-right: 50px;
+                }
+            }
+
+        }
+    }
+}

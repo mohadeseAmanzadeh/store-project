@@ -1,5 +1,11 @@
-<ul class="menu-header">
-    <li *ngFor="let item of menu" class="item-menu">
-        <a href="" class="title-menu">{{item.title}}</a>
-    </li>
-</ul>
+
+<div class="box">
+    <ul class="menu-header">
+        <li *ngFor="let item of menu" class="item-menu">
+            <a href="" class="title-menu">{{item.title}}</a>
+        </li>
+    </ul>
+    <div class="icon-box" [routerLink]="'cart'">
+        <svg-icon src="/assets/svg/shopping-cart.svg"></svg-icon>
+    </div>
+</div>

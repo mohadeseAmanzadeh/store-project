@@ -10,6 +10,7 @@ import { WatchListService } from '../../services/watch-list.service';
 import { ListFilterComponent } from '../list-filter/list-filter.component';
 import { FilterService } from '../../services/filter.service';
 import { RouterModule } from '@angular/router';
+import { SvgIconComponent } from 'angular-svg-icon';
 
 
 
@@ -24,7 +25,9 @@ import { RouterModule } from '@angular/router';
     SearchPipe,
     SortPipe,
     ListFilterComponent,
-    RouterModule
+    RouterModule, 
+    SvgIconComponent
+
   ],
   templateUrl: './watch-list.component.html',
   styleUrl: './watch-list.component.scss'
