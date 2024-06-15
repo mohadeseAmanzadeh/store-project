@@ -33,6 +33,11 @@ export class WatchListService {
     })
   }
 
+
+  public setWatchList(watchList: any) {
+    this.watchList = watchList
+  }
+
    public getWatch(watchId: any ) {
     return new Promise((resolve, reject) => {
       let item:any = this.getWatchList().then((res:any)=>{

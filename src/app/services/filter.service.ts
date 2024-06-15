@@ -12,109 +12,115 @@ export class FilterService {
     
     constructor(
         private watchListService: WatchListService,
-    ) {}
+    ) {
+      
+    }
 
-  public genderList = [
+    public genderList = [
+        {
+        id: 1,
+        gender: "بچگانه",
+        active: false
+    },
     {
-      id: 1,
-      gender: "بچگانه",
-      active: false
-  },
-  {
-      id: 2,
-      gender: "زنانه",
-      active: false
-  },
-  {
-      id: 3,
-      gender: "مردانه",
-      active: false
-  }
-  ]
-  public colorList = [
+        id: 2,
+        gender: "زنانه",
+        active: false
+    },
     {
-      id: 1,
-      color: "سبز",
-      active: false
-  },
-  {
-      id: 2,
-      color: "نقره‌ای",
-      active: false
-  },
-  {
-      id: 3,
-      color: "خاکستری",
-      active: false
-  },
-  {
-      id: 4,
-      color: "بنفش",
-      active: false
-  },
-  {
-      id: 5,
-      color: "صورتی",
-      active: false
-  },
-  {
-      id: 6,
-      color: "رزگلد",
-      active: false
-  },
-  {
-      id: 7,
-      color: "سورمه‌ای",
-      active: false
-  },
-  {
-      id: 8,
-      color: "مشکی",
-      active: false
-  },
-  {
-      id: 9,
-      color: "آبی",
-      active: false
-  },
-  {
-      id: 10,
-      color: "طلایی",
-      active: false
-  },
-  {
-      id: 11,
-      color: "سفید",
-      active: false
-  }
-  ]
-  public warrantyList = [
+        id: 3,
+        gender: "مردانه",
+        active: false
+    }
+    ]
+    public colorList = [
+        {
+        id: 1,
+        color: "سبز",
+        active: false
+    },
     {
-      id: 1,
-      warranty: "گارانتی 24 ماهه دیجیران",
-      active: false
-  },
-  {
-      id: 2,
-      warranty: "گارانتی 18 ماهه زمان و زیور",
-      active: false
-  },
-  {
-      id: 3,
-      warranty: "گارانتی 12 ماهه پوزیترون",
-      active: false
-  }
-  ]
+        id: 2,
+        color: "نقره‌ای",
+        active: false
+    },
+    {
+        id: 3,
+        color: "خاکستری",
+        active: false
+    },
+    {
+        id: 4,
+        color: "بنفش",
+        active: false
+    },
+    {
+        id: 5,
+        color: "صورتی",
+        active: false
+    },
+    {
+        id: 6,
+        color: "رزگلد",
+        active: false
+    },
+    {
+        id: 7,
+        color: "سورمه‌ای",
+        active: false
+    },
+    {
+        id: 8,
+        color: "مشکی",
+        active: false
+    },
+    {
+        id: 9,
+        color: "آبی",
+        active: false
+    },
+    {
+        id: 10,
+        color: "طلایی",
+        active: false
+    },
+    {
+        id: 11,
+        color: "سفید",
+        active: false
+    }
+    ]
+    public warrantyList = [
+        {
+        id: 1,
+        warranty: "گارانتی 24 ماهه دیجیران",
+        active: false
+    },
+    {
+        id: 2,
+        warranty: "گارانتی 18 ماهه زمان و زیور",
+        active: false
+    },
+    {
+        id: 3,
+        warranty: "گارانتی 12 ماهه پوزیترون",
+        active: false
+    }
+    ]
 
+    public list : any = [];
 
-  
-  public watchListData: any = [];
-  public filterList(type: any) {
-    this.watchListService.getWatchList().then((resp: any) => {
-        let watchListCopy = resp;
-        let watchList = resp;
+    getList() {
+        this.watchListService.getWatchList().then((resp: any) => {   
+            this.list = resp;
+        }) 
+        
 
-        let watchlist = watchListCopy;
+    }
+
+    public watchListData: any = [];
+    public filterList(type: any) {
+        let watchlist = this.list;
         let hasGenderFilter = false;
         this.watchListData = [];
         watchlist.forEach((val: any) => {              
@@ -124,10 +130,10 @@ export class FilterService {
                     if(val.genderId == gender.id){
                         this.watchListData.push(val);
                     }
-                   
+                
                 }
             })
-               
+            
         })
         watchlist = hasGenderFilter?this.watchListData: watchlist;
         let hasColorFilter = false;
@@ -139,10 +145,10 @@ export class FilterService {
                     if(val.colorId == color.id){
                         this.watchListData.push(val);
                     }
-                   
+                
                 }
             })
-               
+            
         })
         watchlist = hasColorFilter?this.watchListData: watchlist;
         let hasWarrantyFilter = false;
@@ -159,11 +165,12 @@ export class FilterService {
         })
         watchlist = hasWarrantyFilter?this.watchListData: watchlist;
         
-        watchList = watchlist;
-      })
-  
+        this.watchListService.setWatchList(watchlist);
 
-  }
+        console.log(watchlist, '222222');
+        
+
+    }
 
 
 
