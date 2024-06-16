@@ -143,11 +143,23 @@
                    }
 
                    &:hover {
-                    .like-button, .comparison {
-                        visibility: visible;
-                        cursor: pointer;
+                        .like-button, .comparison {
+                            visibility: visible;
+                            cursor: pointer;
+                        }
+
+                        .add-to-cart {
+                            background-color: $hover-button;
+                            color: $contianer;
+
+                            svg-icon {
+                                svg {
+                                    color: $contianer;
+                                }
+                            }
+                            
+                        }
                     }
-                }
                 }
             }
         }
