@@ -97,7 +97,6 @@
                     .add-to-cart {
                         padding: 6px 8px;
                         font-family: $fontNormal;
-                        // float: right;
                         border: 1px solid $border;
                         outline: none;
                         border-radius: 50px;
@@ -122,23 +121,30 @@
                     }
 
                    .like-button  {
-                    // float: right;
-                        height: 24px;
-                        display: none;
                         margin-right: 6px;
+                   }
+
+                   .comparison {
+                    margin-left: 6px;
+                   }
+
+                   .comparison, .like-button {
+                        height: 24px;
+                        visibility: hidden;
+                        display: inline-block;
                         svg-icon {
                             height: 24px;
                             display: inline-block;
                             svg {
-                                height: 24px;
-                                width: 24px;
+                                height: 22px;
+                                width: 22px;
                             }
                         }
                    }
 
                    &:hover {
-                    .like-button {
-                        display: block;
+                    .like-button, .comparison {
+                        visibility: visible;
                         cursor: pointer;
                     }
                 }
