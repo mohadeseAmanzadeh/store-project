@@ -2,17 +2,81 @@
 .cart {
     direction: rtl;
     .cart-box {
+        display: flex;
+        flex-direction: column;
         border: 1px solid $borderTable;
         width: 100%;
         height: auto;
+        box-sizing: border-box;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, .08);
+
         .header-box {
+            border-bottom: 1px solid $borderTable;
+            margin-inline: 30px;
+            box-sizing: border-box;
             .title-header {
+                padding: 8px;
+                font-size: $fontSizeMedium;
                 float: right;
+                width: 20%;
                 &.product-name {
-                    margin-right: 50px;
+                    margin-right: 200px;
+                    width: 38%;
                 }
             }
 
+        }
+
+        .content-box {
+            min-height: 100px;
+
+            .content {
+                display: flex;
+
+                .clear {
+                    width: 5%;
+                    margin-right: 40px;
+                }
+
+                .watch-img {
+                    width: 12%;
+                }
+
+                .product {
+                    width: 37%;
+                }
+
+                .unit-price {
+                    width: 20%;
+                }
+
+                .number {
+                    width: 20%;
+                }
+            }
+        }
+
+        .footer-box {
+            border-top: 1px solid $borderTable;
+            margin-inline: 30px;
+            box-sizing: border-box;
+            button {
+                background: $contianer;
+                border: none;
+                outline: none;
+                line-height: 40px;
+                font-family: $fontNormal;
+
+                &.return {
+                    margin-right: 50px;
+                    float: right;
+                }
+
+                &.clear-all {
+                    float: left;
+                    margin-left: 50px;
+                }
+            }
         }
     }
 }
