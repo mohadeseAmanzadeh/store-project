@@ -19,14 +19,21 @@ export class MenuHeaderComponent {
   public menu = [ 
     
     {
-      title: 'ساعت مردانه'
+      title: 'ساعت مردانه',
+      link: ''
     },
     {
-      title: 'ساعت زنانه'
+      title: 'ساعت زنانه',
+      link: ''
     },
 
     {
-      title: 'برند ها'
+      title: 'برند ها',
+      link: ''
+    },
+    {
+      title: 'علاقه مندی ها',
+      link: 'interest'
     }
   ]
 }

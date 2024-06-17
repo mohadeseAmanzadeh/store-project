@@ -1,8 +1,10 @@
 <div class="header">
     <div class="list">
-        <div class="item-list" *ngFor="let itemList of list">
-            <span class="icon">{{itemList.icon}}</span>
-            <span class="title-list">{{itemList.title}}</span>
+        <div class="item-list">
+            <span class="title-list">ورود / ثبت نام</span>
+        </div>
+        <div class="item-list" [routerLink]="'comparison'">
+            <span class="title-list">مقایسه</span>
         </div>
     </div>
     <div class="form">

@@ -4,6 +4,7 @@ import { SvgIconComponent } from 'angular-svg-icon';
 import { MenuHeaderComponent } from '../menu-header/menu-header.component';
 import { FormsModule } from '@angular/forms';
 import { SearchService } from '../../services/search.service';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -12,7 +13,8 @@ import { SearchService } from '../../services/search.service';
     CommonModule, 
     SvgIconComponent, 
     MenuHeaderComponent,
-    FormsModule
+    FormsModule,
+    RouterModule
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'

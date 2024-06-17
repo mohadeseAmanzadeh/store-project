@@ -8,16 +8,39 @@
         </div>
         <div class="content-box">
             <div class="content">
-                <div class="clear"></div>
-                <div class="watch-img"></div>
-                <div class="product"></div>
-                <div class="unit-price"></div>
-                <div class="number"></div>
+                <div class="clear">
+                    <svg-icon src="/assets/svg/close.svg"></svg-icon>
+                </div>
+                <div class="watch-img">
+                    <img src="https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/t/m/tm8a11hmrrasr5.jpg" alt="">
+                </div>
+                <div class="product">
+                    <div class="gender">
+                        <span class="title">ساعت مچی</span>
+                        <span class="value"> زنانه</span>
+                    </div>
+                    <div class="brand-watch">
+                        <span class="title">برند</span>
+                        <span class="value">کاسیو</span>
+                    </div>
+                    <div class="model">
+                        <span class="title">مدل</span>
+                        <span class="value">سبرسیپگلیق</span>
+                    </div>
+                </div>
+                <div class="unit-price">
+                    <span class="value">5525425</span>
+                    <span class="title">تومان</span>     
+                </div>
+                <div class="number">
+                    <span class="value">5525425</span>
+                    <span class="title">باقی مانده است</span>    
+                </div>
             </div>
         </div>
         <div class="footer-box">
             <button class="return" [routerLink]="''">بازگشت به صفحه محصولات</button>
-            <button class="clear-all">پاک کردن سبد خرید</button>
+            <button class="clear-all" (click)="clearAllList()">پاک کردن سبد خرید</button>
         </div>
     </div>
 </div>

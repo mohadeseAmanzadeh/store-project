@@ -2,7 +2,7 @@
 <div class="box">
     <ul class="menu-header">
         <li *ngFor="let item of menu" class="item-menu">
-            <a href="" class="title-menu">{{item.title}}</a>
+            <a href="" class="title-menu" routerLink="{{item.link}}">{{item.title}}</a>
         </li>
     </ul>
     <div class="icon-box" [routerLink]="'cart'">

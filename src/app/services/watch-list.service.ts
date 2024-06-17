@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { DataService } from './data.service';
 import { BrandList, ColorList, WarrantyList, GenderList } from '../data/data.api';
+import { isWeakMap } from 'util/types';
 
 @Injectable({
   providedIn: 'root'
@@ -9,10 +10,11 @@ export class WatchListService {
 
   private watchList: any = [];
   private watchListCopy: any = [];
+  private watchListLocalStorage: any = [];
   public brandList: any = [];
   public colorList: any = [];
   public genderList: any = [];
-  
+  public like: any = [];
 
 
   constructor(
@@ -28,25 +30,27 @@ export class WatchListService {
       this.dataService.getData().subscribe((watchList: any) => {
         this.watchList = this._prepareItems(watchList);
         this.watchListCopy = this.watchList;
+        // this.watchListLocalStorage = this.watchList
+        this.setToLocalStorage(watchList);
       })
       resolve(this.watchList);
     })
   }
-
 
   public setWatchList(watchList: any) {
     this.watchList = watchList
   }
 
    public getWatch(watchId: any ) {
-    return new Promise((resolve, reject) => {
-      let item:any = this.getWatchList().then((res:any)=>{
-          item = res.filter((item: any) => item.id === watchId);
-          item = item?item[0]:null
-          resolve(item);
-      })
-  });
-}
+      return new Promise((resolve, reject) => {
+        let item:any = this.getWatchList().then((res:any)=>{
+            item = res.filter((item: any) => item.id === watchId);
+            item = item?item[0]:null
+            resolve(item);
+        })
+    });
+  }
+
   private _prepareItems(watchList: any) {
     this.watchList = [];
     watchList.forEach((watch: any) => {
@@ -58,5 +62,22 @@ export class WatchListService {
     });
     return this.watchList;
   }
+
+  setToLocalStorage(item: any) {
+    this.watchListLocalStorage = JSON.stringify(item);
+    localStorage.setItem('watchList', this.watchListLocalStorage);
+   
+  }
+
+  setToLocalStorageLike(item: any) {
+    this.like.push(item)
+    // this.like = JSON.stringify(this.like);
+    localStorage.setItem('like', JSON.stringify(this.like));
+  }
+
+  // setToLocalStorage(item: any) {
+  //   this.watchListLocalStorage = JSON.stringify(item);
+  //   localStorage.setItem('watchList', this.watchListLocalStorage)
+  // }
 
 }

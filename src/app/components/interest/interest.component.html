@@ -1,1 +1,48 @@
-<p>interest works!</p>
+<div class="interest">
+    <h3 class="interest-title">لیست دلخواه من</h3>
+    <div class="interest-box">
+        <div class="box-header">
+            <div class="header-title">
+                جزییات محصول
+            </div>
+            <div class="header-title cart">
+                 افزودن به سبد
+            </div>
+        </div>
+        <div class="box-body">
+            <div class="product" *ngFor="let item of interestList">
+                <div class="information" >
+                    <div class="watch-img">
+                        <img src="{{item.img}}" alt="">
+                    </div>
+                    <div class="gender">
+                        <span class="title">ساعت مچی</span>
+                        <span class="value">{{item.genderType}}</span>
+                    </div>
+                    <div class="brand-watch">
+                        <span class="title">برند</span>
+                        <span class="value">{{item.brandTitle}}</span>
+                    </div>
+                    <div class="model">
+                        <span class="title">مدل</span>
+                        <span class="value">{{item.model}}</span>
+                    </div>
+                </div> 
+                <div class="add-cart">
+                    <div class="price">
+                        <span class="value">{{item.price}}</span>
+                        <span class="title">تومان</span>     
+                    </div>
+                    <button class="button">افزودن به سبد</button>
+                </div>
+                <div class="clear-list" (click)="clearItem(item)">
+                    <svg-icon src="/assets/svg/close.svg"></svg-icon>
+                </div>
+            </div>        
+        </div>
+    </div>
+    <div class="back" [routerLink]="''">
+        <svg-icon class="back-svg" src="/assets/svg/previous-back.svg"></svg-icon>
+        بازگشت
+    </div>
+</div>

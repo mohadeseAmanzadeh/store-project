@@ -49,6 +49,10 @@ export class WatchListComponent implements OnInit{
     }) 
   }
 
+
+  like(item: any) {
+    this.watchListService.setToLocalStorageLike(item);
+  }
   
 
 }
