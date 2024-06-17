@@ -32,12 +32,14 @@
 
             .content {
                 display: flex;
+                border-bottom: 1px solid $border;
 
                 .clear {
                     width: 2%;
                     margin-right: 40px;
                     display: flex;
                     align-items: center;
+                    cursor: pointer;
 
                 }
 
@@ -92,6 +94,11 @@
                     align-items: center;
                     color: $card-color;
                 }
+            }
+
+            .no-item {
+                text-align: center;
+                line-height: 100px;
             }
         }
 

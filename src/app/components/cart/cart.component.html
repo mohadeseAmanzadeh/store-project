@@ -7,40 +7,43 @@
             <div class="title-header">تعداد</div>
         </div>
         <div class="content-box">
-            <div class="content">
-                <div class="clear">
+            <div class="content" *ngFor="let item of cartList">
+                <div class="clear" (click)="clearItem(item)">
                     <svg-icon src="/assets/svg/close.svg"></svg-icon>
                 </div>
                 <div class="watch-img">
-                    <img src="https://ticktackgallery.com/media/catalog/product/cache/1/small_image/400x/17f82f742ffe127f42dca9de82fb58b1/t/m/tm8a11hmrrasr5.jpg" alt="">
+                    <img src="{{item.img}}" alt="">
                 </div>
                 <div class="product">
                     <div class="gender">
                         <span class="title">ساعت مچی</span>
-                        <span class="value"> زنانه</span>
+                        <span class="value"> {{item.genderType}}</span>
                     </div>
                     <div class="brand-watch">
                         <span class="title">برند</span>
-                        <span class="value">کاسیو</span>
+                        <span class="value">{{item.brandTitle}}</span>
                     </div>
                     <div class="model">
                         <span class="title">مدل</span>
-                        <span class="value">سبرسیپگلیق</span>
+                        <span class="value">{{item.model}}</span>
                     </div>
                 </div>
                 <div class="unit-price">
-                    <span class="value">5525425</span>
+                    <span class="value">{{item.price}}</span>
                     <span class="title">تومان</span>     
                 </div>
                 <div class="number">
-                    <span class="value">5525425</span>
+                    <span class="value"></span>
                     <span class="title">باقی مانده است</span>    
                 </div>
+            </div>
+            <div class="no-item" *ngIf="cartList.length == 0">
+                شما هیچ آیتمی در سبد خریدتان ندارید.
             </div>
         </div>
         <div class="footer-box">
             <button class="return" [routerLink]="''">بازگشت به صفحه محصولات</button>
-            <button class="clear-all" (click)="clearAllList()">پاک کردن سبد خرید</button>
+            <button class="clear-all" (click)="clearAllList()" *ngIf="cartList.length != 0">پاک کردن سبد خرید</button>
         </div>
     </div>
 </div>

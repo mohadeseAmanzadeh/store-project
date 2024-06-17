@@ -55,4 +55,10 @@ export class WatchListComponent implements OnInit{
   }
   
 
+  addToBasket(item: any) {
+    this.watchListService.setToLocalStorageBasket(item);
+    console.log('0000');
+    
+  }
+
 }

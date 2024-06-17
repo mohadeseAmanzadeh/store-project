@@ -48,6 +48,7 @@ export class InterestComponent implements OnInit{
 
 
   clearItem(item: any) {
-
+    this.interestList.splice(item, 1);
+    localStorage.setItem('like', JSON.stringify(this.interestList));
   }
 }
