@@ -1,0 +1,21 @@
+@import '../../../style/components/variables.scss';
+.camparison-table {
+    border: 1px solid $border;
+    display: flex;
+
+    .product-box {
+        width: 300px;
+        background: $activeBackground;
+        border-right: 1px solid $border;
+    }
+
+    .watch {
+        border-right: 1px solid $border;
+        
+    }
+}
+.no-item {
+    text-align: center;
+    line-height: 100px;
+    direction: rtl;
+}

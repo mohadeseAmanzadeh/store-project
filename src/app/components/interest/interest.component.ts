@@ -41,8 +41,6 @@ export class InterestComponent implements OnInit{
     this.interestList = localStorage.getItem('like');
     if (this.interestList) {
       this.interestList =  JSON.parse(this.interestList);    
-      console.log(this.interestList);
-      
     }
   }
 

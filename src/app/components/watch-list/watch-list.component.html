@@ -26,14 +26,14 @@
                 </div>
             </div>  
             <div class="icon-box">
-                <div class="comparison">
+                <div class="comparison" (click)="addToCamparison(item)">
                     <svg-icon src="/assets/svg/comparison.svg"></svg-icon>
                 </div>
                 <button class="add-to-cart" (click)="addToBasket(item)">
                   <svg-icon src="/assets/svg/shopping-cart.svg"></svg-icon>  
                   <span class="title-cart">افزودن به سبد</span>
                 </button>
-                <div class="like-button" (click)="like(item)">
+                <div class="like-button" (click)="addToLike(item)">
                     <svg-icon src="/assets/svg/like.svg"></svg-icon>
                 </div>
             </div>    

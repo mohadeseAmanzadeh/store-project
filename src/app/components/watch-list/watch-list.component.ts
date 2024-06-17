@@ -50,15 +50,16 @@ export class WatchListComponent implements OnInit{
   }
 
 
-  like(item: any) {
+  addToLike(item: any) {
     this.watchListService.setToLocalStorageLike(item);
   }
   
 
   addToBasket(item: any) {
     this.watchListService.setToLocalStorageBasket(item);
-    console.log('0000');
-    
   }
 
+  addToCamparison(item: any) {
+    this.watchListService.setToLocalStorageCamparison(item);
+  }
 }

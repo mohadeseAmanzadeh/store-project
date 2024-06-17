@@ -14,8 +14,9 @@ export class WatchListService {
   public brandList: any = [];
   public colorList: any = [];
   public genderList: any = [];
-  public like: any = [];
-  public basketList: any = [];
+  private like: any = [];
+  private basketList: any = [];
+  private camparisonList: any = [];
 
   constructor(
     private dataService : DataService,
@@ -30,7 +31,6 @@ export class WatchListService {
       this.dataService.getData().subscribe((watchList: any) => {
         this.watchList = this._prepareItems(watchList);
         this.watchListCopy = this.watchList;
-        // this.watchListLocalStorage = this.watchList
         this.setToLocalStorage(watchList);
       })
       resolve(this.watchList);
@@ -77,6 +77,11 @@ export class WatchListService {
   setToLocalStorageBasket(item: any) {
     this.basketList.push(item);
     localStorage.setItem('basketList', JSON.stringify(this.basketList));
+  }
+
+  setToLocalStorageCamparison(item: any) {
+    this.camparisonList.push(item);
+    localStorage.setItem('camparisonList', JSON.stringify(this.camparisonList));
   }
 
 }
