@@ -13,4 +13,8 @@ export class DataService {
       .get('./assets/json/list.json',)
   }
 
+  public setDataTostorage(key: any , value:any){
+    localStorage.setItem(key, JSON.stringify(value));
+  }
+
 }

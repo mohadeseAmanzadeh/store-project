@@ -71,17 +71,17 @@ export class WatchListService {
 
   setToLocalStorageLike(item: any) {
     this.like.push(item);
-    localStorage.setItem('like', JSON.stringify(this.like));
+    this.dataService.setDataTostorage('like', this.like)
   }
 
   setToLocalStorageBasket(item: any) {
     this.basketList.push(item);
-    localStorage.setItem('basketList', JSON.stringify(this.basketList));
+    this.dataService.setDataTostorage('basketList', this.basketList)
   }
 
   setToLocalStorageCamparison(item: any) {
     this.camparisonList.push(item);
-    localStorage.setItem('camparisonList', JSON.stringify(this.camparisonList));
+    this.dataService.setDataTostorage('camparisonList', this.camparisonList)
   }
 
 }
