@@ -114,8 +114,8 @@ export class FilterService {
     
     public filterList(type: any) {
         return new Promise((resolve, reject)=>{
-
             this.watchListService.getWatchList().then((resp: any) => {
+                //@todo It is better to clean duplicate codes inside a function and pass arguments
                 let watchlist = resp;
                 let hasGenderFilter = false;
                 this.watchListData = [];
@@ -167,58 +167,4 @@ export class FilterService {
 
         })
     }
-    // public filterList(type: any) {
-    //     this.watchListService.getWatchList().then((resp: any) => {
-    //         let watchlist = resp;
-    //         let hasGenderFilter = false;
-    //         this.watchListData = [];
-    //         watchlist.forEach((val: any) => {              
-    //             this.genderList.forEach((gender: any)=>{
-    //                 if ( gender.active ){
-    //                     hasGenderFilter = true;
-    //                     if(val.genderId == gender.id){
-    //                         this.watchListData.push(val);
-    //                     }
-                    
-    //                 }
-    //             })     
-    //         })
-    //         watchlist = hasGenderFilter?this.watchListData: watchlist;
-    //         let hasColorFilter = false;
-    //         this.watchListData = [];
-    //         watchlist.forEach((val: any) => {     
-    //             this.colorList.forEach((color: any)=>{
-    //                 if ( color.active ){
-    //                     hasColorFilter = true;
-    //                     if(val.colorId == color.id){
-    //                         this.watchListData.push(val);
-    //                     }
-                    
-    //                 }
-    //             })
-                
-    //         })
-    //         watchlist = hasColorFilter?this.watchListData: watchlist;
-    //         let hasWarrantyFilter = false;
-    //         this.watchListData = [];
-    //         watchlist.forEach((val: any) => { 
-    //             this.warrantyList.forEach((warranty: any)=>{
-    //                 if ( warranty.active ){
-    //                     hasWarrantyFilter = true;
-    //                     if(val.warrantyId == warranty.id){
-    //                         this.watchListData.push(val);
-    //                     }
-    //                 }
-    //             })    
-    //         })
-    //         watchlist = hasWarrantyFilter?this.watchListData: watchlist;
-            
-            
-    //         this.watchListService.setWatchList(watchlist);
-    //     })  
-    // console.log(this.watchListData );
-    // }
-
-
-
 }

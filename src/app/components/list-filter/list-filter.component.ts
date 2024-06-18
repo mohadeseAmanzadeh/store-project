@@ -40,9 +40,7 @@ export class ListFilterComponent implements OnInit{
 
 
   public filterListByGender(gender: any) {
- 
     gender.active= !gender.active; 
-    // this.filterService.filterList('gender')
     this.filterService.filterList('gender').then((res)=>{
       this.newWatchList.emit(res);
     });
@@ -50,14 +48,12 @@ export class ListFilterComponent implements OnInit{
  
   public filterListByWarranty(warranty: any) {
     warranty.active= !warranty.active; 
-    // this.filterService.filterList('warranty')
     this.filterService.filterList('warranty').then((res)=>{
       this.newWatchList.emit(res);
     });
   }
   public filterListByColor(color: any) {
     color.active= !color.active; 
-    // this.filterService.filterList('color')
     this.filterService.filterList('color').then((res)=>{
       this.newWatchList.emit(res);
     });

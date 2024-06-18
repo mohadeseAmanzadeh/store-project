@@ -15,17 +15,20 @@ import { Subscription } from 'rxjs';
 })
 export class SorterListComponent implements OnInit , OnDestroy{
  
-  // private sorterListTypeSubscription: Subscription;
+  // private sorterListTypeSubscription!: Subscription;
 
   public selectedSorterIdx: string = '';
 
   constructor(
     public sorterListService: SorterListService
-  ) {}
+  ) {
+
+  }
 
   ngOnInit(): void {
-    // this.sorterListTypeSubscription = this.sorterListService.setSorterType().subscribe(() => {
-
+    // this.sorterListTypeSubscription = this.sorterListService.getSorterType().subscribe((res) => {
+    //   console.log(res, 'res');
+    //   // this.sorterListService.setSorterType(res);
     // })
   }
 
@@ -34,6 +37,8 @@ export class SorterListComponent implements OnInit , OnDestroy{
 	}
 
   selectSorter(sorter: SorterListInterface) {
+    console.log('sadasd', sorter);
+    
     this.sorterListService.sorterList.forEach((value:any) => {
       value.active = ( sorter.id == value.id);
     });

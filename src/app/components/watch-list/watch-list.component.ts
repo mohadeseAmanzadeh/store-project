@@ -51,15 +51,18 @@ export class WatchListComponent implements OnInit{
 
 
   addToLike(item: any) {
+    //@todo It is better to send ID
     this.watchListService.setToLocalStorageLike(item);
   }
   
 
   addToBasket(item: any) {
+    //@todo It is better to send ID
     this.watchListService.setToLocalStorageBasket(item);
   }
 
   addToCamparison(item: any) {
+    //@todo It is better to send ID
     this.watchListService.setToLocalStorageCamparison(item);
   }
 }

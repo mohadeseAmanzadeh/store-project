@@ -17,8 +17,7 @@ import { WatchListService } from './services/watch-list.service';
     SvgIconComponent,
     RouterOutlet,
     AccordionDirective,
-    // AccordionComponent,
-	
+   
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
@@ -36,7 +35,6 @@ export class AppComponent implements OnInit{
   ngOnInit(): void {
    
     this.watchListService.getWatchList().then((resp: any) => {   
-        // this.list = resp;
     }) 
       
   }
