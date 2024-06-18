@@ -3,6 +3,7 @@ import { WatchListService } from '../../services/watch-list.service';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { SvgIconComponent } from 'angular-svg-icon';
+import { DataService } from '../../services/data.service';
 
 @Component({
   selector: 'app-interest',
@@ -20,7 +21,8 @@ export class InterestComponent implements OnInit{
   public interestList: any = [];
 
   constructor(
-    public watchListService: WatchListService,
+    private dataService: DataService,
+
   ) {}
 
   ngOnInit(): void {
@@ -38,10 +40,11 @@ export class InterestComponent implements OnInit{
 
 
   getLocalStorageLike() {
-    this.interestList = localStorage.getItem('like');
-    if (this.interestList) {
-      this.interestList =  JSON.parse(this.interestList);    
-    }
+    this.dataService.getDataFromStorage('like', this.interestList);
+    // this.interestList = localStorage.getItem('like');
+    // if (this.interestList) {
+    //   this.interestList =  JSON.parse(this.interestList);    
+    // }
   }
 
 

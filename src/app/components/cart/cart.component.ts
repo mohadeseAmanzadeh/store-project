@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { SvgIconComponent } from 'angular-svg-icon';
+import { DataService } from '../../services/data.service';
 
 @Component({
   selector: 'app-cart',
@@ -16,7 +17,11 @@ import { SvgIconComponent } from 'angular-svg-icon';
 })
 export class CartComponent  implements OnInit{
 
-  public cartList: any = []
+  public cartList: any = [];
+
+  constructor(
+    private dataService: DataService,
+  )  {}
 
   ngOnInit(): void {
     this.getLocalStorageBasket();
@@ -24,11 +29,12 @@ export class CartComponent  implements OnInit{
 
 
   getLocalStorageBasket() {
-    this.cartList = localStorage.getItem('basketList');
-    if (this.cartList) {
-      this.cartList =  JSON.parse(this.cartList);    
-      console.log(this.cartList);   
-    }
+    this.dataService.getDataFromStorage('basketList', this.cartList);
+    // this.cartList = localStorage.getItem('basketList');
+    // if (this.cartList) {
+    //   this.cartList =  JSON.parse(this.cartList);    
+    //   console.log(this.cartList);   
+    // }
   } 
 
   clearItem(item: any) {
