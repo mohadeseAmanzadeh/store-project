@@ -7,15 +7,75 @@
         width: 300px;
         background: $activeBackground;
         border-right: 1px solid $border;
+        // padding-left: 20px;
+       
+        .product {
+            height: 400px;
+            margin-top: 33px;
+        }
+
+        .product, 
+        .gender-title,
+        .warranty-title,
+        .price-title,
+        .model-title {
+            padding-left: 20px;
+            line-height: 50px;
+            font-size: $fontSizeMedium;
+            font-weight: bold;
+            color: $hover-button;
+        }
+
     }
 
     .watch {
         border-right: 1px solid $border;
-        
+        .clear {
+            cursor: pointer;
+            svg-icon {
+              position: relative;
+              top: 5px;
+              left: 10px;
+            }
+        }
+        .image {
+            max-height: 400px;
+            max-width: 400px;
+        }
+
+        .gender,
+        .warranty,
+        .price,
+        .model {
+            padding-left: 20px;
+            line-height: 50px;
+            font-size: $fontSizeMedium;
+            color: $menu-color;
+        }
     }
 }
 .no-item {
     text-align: center;
     line-height: 100px;
     direction: rtl;
+}
+
+.back {
+    margin-block: 10px;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    direction: rtl;
+    .back-svg {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        transform: rotate(180deg);
+        margin-left: 6px;
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
 }

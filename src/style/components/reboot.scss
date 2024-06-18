@@ -1,3 +1,8 @@
+@import './variables.scss';
 body {
     margin: 0px;
+}
+
+.border-bottom {
+    border-bottom: 1px solid $border;
 }

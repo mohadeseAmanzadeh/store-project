@@ -1,9 +1,9 @@
 <div class="camparison-table" *ngIf="camparison.length != 0">
     <div class="product-box">
-        <div class="product">محصول</div>
-        <div class="gender-title">جنسیت</div>
-        <div class="warranty-title">گارانتی</div>
-        <div class="price-title">قیمت</div>
+        <div class="product border-bottom">محصول</div>
+        <div class="gender-title border-bottom">جنسیت</div>
+        <div class="warranty-title border-bottom">گارانتی</div>
+        <div class="price-title border-bottom">قیمت</div>
         <div class="model-title">مدل</div>
     </div>
     <div class="watch" *ngFor="let item of camparison">
@@ -11,16 +11,16 @@
             <svg-icon src="/assets/svg/close.svg"></svg-icon>
         </div>
         <div class="table">
-            <div class="image">
+            <div class="image border-bottom">
                 <img src="{{item.img}}" alt="">
             </div>
-            <div class="gender">
+            <div class="gender border-bottom">
                 {{item.genderType}}
             </div>
-            <div class="warranty">
+            <div class="warranty border-bottom">
                 {{item.warrantyType}}
             </div>
-            <div class="price">
+            <div class="price border-bottom">
                 {{item.price}}
             </div>
             <div class="model">
@@ -31,4 +31,8 @@
 </div>
 <div class="no-item" *ngIf="camparison.length == 0">
     شما هیچ کالای در لیست مقایسه تان ندارید.
+</div>
+<div class="back" [routerLink]="''">
+    <svg-icon class="back-svg" src="/assets/svg/previous-back.svg"></svg-icon>
+    بازگشت
 </div>

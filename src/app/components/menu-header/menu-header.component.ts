@@ -19,17 +19,8 @@ export class MenuHeaderComponent {
   public menu = [ 
     
     {
-      title: 'ساعت مردانه',
-      link: ''
-    },
-    {
-      title: 'ساعت زنانه',
-      link: ''
-    },
-
-    {
-      title: 'برند ها',
-      link: ''
+      title: 'مقایسه',
+      link: 'comparison'
     },
     {
       title: 'علاقه مندی ها',
