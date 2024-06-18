@@ -17,7 +17,7 @@ export class DataService {
     localStorage.setItem(key, JSON.stringify(value));
   }
 
-  public getDataToStorage(key: any , value: any) {
+  public getDataFromStorage(key: any , value: any) {
     value = localStorage.getItem(key);
     if (value) {
       value =  JSON.parse(value);    
