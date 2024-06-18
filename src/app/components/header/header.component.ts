@@ -39,7 +39,4 @@ export class HeaderComponent {
     public searchService: SearchService
   ) {}
 
-  showInput() {
-    
-  }
 }

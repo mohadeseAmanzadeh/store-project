@@ -26,30 +26,17 @@ export class InterestComponent implements OnInit{
   ) {}
 
   ngOnInit(): void {
-    // this.getLocalStorage();
     this.getLocalStorageLike();
   }
 
-  // getLocalStorage() {
-  //   let w: any = localStorage.getItem('watchList');
-  //   if (w) {
-  //     w =  JSON.parse(w);    
-  //   }
-    
-  // }
-
-
+  
   getLocalStorageLike() {
-    this.dataService.getDataFromStorage('like', this.interestList);
-    // this.interestList = localStorage.getItem('like');
-    // if (this.interestList) {
-    //   this.interestList =  JSON.parse(this.interestList);    
-    // }
+    this.interestList =  this.dataService.getDataFromStorage('like', this.interestList);
   }
 
 
   clearItem(item: any) {
     this.interestList.splice(item, 1);
-    localStorage.setItem('like', JSON.stringify(this.interestList));
+    this.dataService.setDataTostorage('like', this.interestList);
   }
 }

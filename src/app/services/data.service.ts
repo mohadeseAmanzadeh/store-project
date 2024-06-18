@@ -22,6 +22,7 @@ export class DataService {
     if (value) {
       value =  JSON.parse(value);    
     }
+    return value;
   }
 
 }

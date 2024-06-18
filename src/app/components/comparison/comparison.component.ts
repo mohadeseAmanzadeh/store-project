@@ -27,17 +27,12 @@ export class ComparisonComponent implements OnInit{
   }
 
   getLocalStorageCamparison() {
-    this.dataService.getDataFromStorage('camparisonList', this.camparison)
-    // this.camparison = localStorage.getItem('camparisonList');
-    // if (this.camparison) {
-    //   this.camparison =  JSON.parse(this.camparison);    
-    // }
-
+    this.camparison = this.dataService.getDataFromStorage('camparisonList', this.camparison)
   }
 
 
   clearItem(item: any) {
     this.camparison.splice(item, 1);
-    localStorage.setItem('camparisonList', JSON.stringify(this.camparison));
+    this.dataService.setDataTostorage('camparisonList', this.camparison)
   }
 }

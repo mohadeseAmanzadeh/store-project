@@ -29,17 +29,12 @@ export class CartComponent  implements OnInit{
 
 
   getLocalStorageBasket() {
-    this.dataService.getDataFromStorage('basketList', this.cartList);
-    // this.cartList = localStorage.getItem('basketList');
-    // if (this.cartList) {
-    //   this.cartList =  JSON.parse(this.cartList);    
-    //   console.log(this.cartList);   
-    // }
+    this.cartList = this.dataService.getDataFromStorage('basketList', this.cartList);
   } 
 
   clearItem(item: any) {
     this.cartList.splice(item, 1);
-    localStorage.setItem('basketList', JSON.stringify(this.cartList));
+    this.dataService.setDataTostorage('basketList', this.cartList);
   }
 
 

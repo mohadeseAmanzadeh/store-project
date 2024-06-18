@@ -17,7 +17,10 @@ import { SvgIconComponent } from 'angular-svg-icon';
 })
 export class MenuHeaderComponent {
   public menu = [ 
-    
+    {
+      title: 'خانه',
+      link: ''
+    },
     {
       title: 'مقایسه',
       link: 'comparison'
