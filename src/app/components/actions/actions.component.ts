@@ -11,5 +11,15 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './actions.component.scss'
 })
 export class ActionsComponent {
- 
+  @Input() watch: any = {
+    id: 0,
+    date: '',
+    model: '',
+    price: '',
+    img: '',
+    brandTitle: '',
+    genderType: '',
+    warrantyType: '',
+    colorName: ''
+  }
 }

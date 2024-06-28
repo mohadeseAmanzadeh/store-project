@@ -1,1 +1,17 @@
-<input type="text">
+
+<div>
+    <input type="text"  [(ngModel)]="watch.brandTitle" placeholder="">
+    <input type="text"  [(ngModel)]="watch.colorName" placeholder="">
+    <input type="text"  [(ngModel)]="watch.date" placeholder="">
+    <input type="text"  [(ngModel)]="watch.model" placeholder="">
+    <input type="text"  [(ngModel)]="watch.price" placeholder="">
+    <input type="text"  [(ngModel)]="watch.genderType" placeholder="">
+    <input type="text"  [(ngModel)]="watch.warrantyType" placeholder="">
+</div>
+
+<div>
+    <button type="button" class="add-button">{{(watch.id) ? 'edit' : 'add'}}</button>
+    <button type="button" class="cancel">cancel</button>
+</div>
+
+

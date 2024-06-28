@@ -55,7 +55,7 @@ export class WatchListService {
     this.watchList = [];
     watchList.forEach((watch: any) => {
       watch.brandTitle = BrandList[watch.brandId];
-      watch.colorNamne =  ColorList[watch.colorId];
+      watch.colorName =  ColorList[watch.colorId];
       watch.genderType = GenderList[watch.genderId];
       watch.warrantyType = WarrantyList[watch.warrantyId];
       this.watchList.push(watch);
