@@ -23,6 +23,8 @@
                 height: 16px;
                 width: 16px;
                 cursor: pointer;
+                visibility: hidden;
+                float: left;
 
                 svg {
                     height: 16px;
@@ -154,6 +156,12 @@
                             
                         }
                     }
+                }
+            }
+
+            &:hover {
+                .delete {
+                    visibility: visible;
                 }
             }
         }
