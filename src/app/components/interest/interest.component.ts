@@ -19,6 +19,7 @@ import { DataService } from '../../services/data.service';
 export class InterestComponent implements OnInit{
 
   public interestList: any = [];
+  private cartList: any = [];
 
   constructor(
     private dataService: DataService,
@@ -34,6 +35,9 @@ export class InterestComponent implements OnInit{
     this.interestList =  this.dataService.getDataFromStorage('like', this.interestList);
   }
 
+  getLocalStorageBasket() {
+    this.cartList = this.dataService.getDataFromStorage('basketList', this.cartList);
+  }
 
   clearItem(item: any) {
     this.interestList.splice(item, 1);

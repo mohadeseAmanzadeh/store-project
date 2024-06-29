@@ -10,7 +10,8 @@ export const routes: Routes = [
             { path: 'watch/:id', loadComponent: () => import('./components/watch/watch.component').then((a) => a.WatchComponent) },
             { path: 'cart', loadComponent: () => import('./components/cart/cart.component').then((a) => a.CartComponent) },
             { path: 'comparison', loadComponent: () => import('./components/comparison/comparison.component').then((a) => a.ComparisonComponent) },
-            { path: 'interest', loadComponent: () => import('./components/interest/interest.component').then((a) => a.InterestComponent) }
+            { path: 'interest', loadComponent: () => import('./components/interest/interest.component').then((a) => a.InterestComponent) },
+            // { path: 'actions', loadComponent: () => import('./components/actions/actions.component').then((a) => a.ActionsComponent) }
         ]
     }
 ];

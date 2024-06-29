@@ -37,8 +37,6 @@ export class SorterListComponent implements OnInit , OnDestroy{
 	}
 
   selectSorter(sorter: SorterListInterface) {
-    console.log('sadasd', sorter);
-    
     this.sorterListService.sorterList.forEach((value:any) => {
       value.active = ( sorter.id == value.id);
     });

@@ -3,24 +3,6 @@
 .watchList-container {
     height: 100%;
 
-
-    // .menu {
-    //     padding-right: 0px;
-    //     li {
-    //         list-style: none;
-    //         line-height: 35px;
-    //     }
-    // }
-    
-    // .sort-list {
-    //     width: 300px;
-    //     // display: inline-block;
-    //     float: right;
-    //     position: relative;
-    //     top: 50px;
-    //     right: 66px;
-    // }
-    
     .list {
         width: calc(100% - 540px);
         margin-right: 60px;
@@ -35,6 +17,18 @@
             max-width: 218px;
             box-sizing: border-box;
             float: right;
+
+            .delete {
+                display: inline-block;
+                height: 16px;
+                width: 16px;
+                cursor: pointer;
+
+                svg {
+                    height: 16px;
+                    width: 16px;
+                }
+            }
     
             .product-image {
                 width: 100%;

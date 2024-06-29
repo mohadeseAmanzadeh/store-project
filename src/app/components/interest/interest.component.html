@@ -1,6 +1,6 @@
 <div class="interest">
     <h3 class="interest-title">لیست دلخواه من</h3>
-    <div class="interest-box" *ngIf="interestList.length != 0">
+    <div class="interest-box" *ngIf="interestList?.length > 0">
         <div class="box-header">
             <div class="header-title">
                 جزییات محصول
@@ -41,7 +41,7 @@
             </div>  
         </div>
     </div>
-    <div class="no-item" *ngIf="interestList.length == 0">   
+    <div class="no-item" *ngIf="interestList?.length == 0">   
         شما هیچ کالای در لیست دلخواه‌تان ندارید.
     </div>
     <div class="back" [routerLink]="''">

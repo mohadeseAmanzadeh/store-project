@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { WatchListService } from '../../services/watch-list.service';
 
 @Component({
   selector: 'app-actions',
@@ -11,7 +12,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './actions.component.scss'
 })
 export class ActionsComponent {
-  @Input() watch: any = {
+  @Input() item: any = {
     id: 0,
     date: '',
     model: '',
@@ -22,4 +23,16 @@ export class ActionsComponent {
     warrantyType: '',
     colorName: ''
   }
+  constructor(
+    private watchListService: WatchListService,
+  ) {}
+
+  editWatch() {
+    this.watchListService.editWatch(this.item)
+  }
+
+  addWatch() {
+    this.watchListService.addWatch(this.item)
+  }
+
 }

@@ -22,6 +22,17 @@ export class WatchListService {
     private dataService : DataService,
   ) { }
 
+  private _prepareItems(watchList: any) {
+    this.watchList = [];
+    watchList.forEach((watch: any) => {
+      watch.brandTitle = BrandList[watch.brandId];
+      watch.colorName =  ColorList[watch.colorId];
+      watch.genderType = GenderList[watch.genderId];
+      watch.warrantyType = WarrantyList[watch.warrantyId];
+      this.watchList.push(watch);
+    });
+    return this.watchList;
+  }
 
   public getWatchList() {
     return new Promise((resolve, reject) => {
@@ -31,7 +42,8 @@ export class WatchListService {
       this.dataService.getData().subscribe((watchList: any) => {
         this.watchList = this._prepareItems(watchList);
         this.watchListCopy = this.watchList;
-        this.setToLocalStorage(watchList);
+
+        // this.setToLocalStorage(watchList);
       })
       resolve(this.watchList);
     })
@@ -51,37 +63,41 @@ export class WatchListService {
     });
   }
 
-  private _prepareItems(watchList: any) {
-    this.watchList = [];
-    watchList.forEach((watch: any) => {
-      watch.brandTitle = BrandList[watch.brandId];
-      watch.colorName =  ColorList[watch.colorId];
-      watch.genderType = GenderList[watch.genderId];
-      watch.warrantyType = WarrantyList[watch.warrantyId];
-      this.watchList.push(watch);
-    });
-    return this.watchList;
+  public setToLocalStorage(watchList: any) {
+    this.dataService.setDataTostorage('watchList', watchList);
   }
 
-  setToLocalStorage(item: any) {
-    this.watchListLocalStorage = JSON.stringify(item);
-    localStorage.setItem('watchList', this.watchListLocalStorage);
-   
-  }
-
-  setToLocalStorageLike(item: any) {
+  public setToLocalStorageLike(item: any) {
     this.like.push(item);
     this.dataService.setDataTostorage('like', this.like)
   }
 
-  setToLocalStorageBasket(item: any) {
+  public setToLocalStorageBasket(item: any) {
     this.basketList.push(item);
     this.dataService.setDataTostorage('basketList', this.basketList)
   }
 
-  setToLocalStorageCamparison(item: any) {
+  public setToLocalStorageCamparison(item: any) {
     this.camparisonList.push(item);
     this.dataService.setDataTostorage('camparisonList', this.camparisonList)
+  }
+
+  public editWatch(watch: any) {
+    this.watchList.forEach((value: any, index: any) => {
+      if (value.id == watch.id) {
+        
+      }
+    });
+  }
+
+  addWatch(watch: any) {
+    let index = this.watchList.findIndex((value: any) => value.id === watch.id);
+    if (index === -1) {
+      watch.id = this.watchList.length +1;
+      this.watchList.push(watch)
+    } else {
+      this.watchList[index] = watch;
+    }
   }
 
 }

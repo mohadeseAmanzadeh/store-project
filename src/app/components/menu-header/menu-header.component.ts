@@ -28,6 +28,10 @@ export class MenuHeaderComponent {
     {
       title: 'علاقه مندی ها',
       link: 'interest'
-    }
+    },
+    // {
+    //   title: ' actions',
+    //   link: 'actions'
+    // }
   ]
 }

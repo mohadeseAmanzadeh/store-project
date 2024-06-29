@@ -1,8 +1,9 @@
-
+<!-- <app-actions></app-actions> -->
 <div class="watchList-container">
-    <app-sorter-list></app-sorter-list>
+    <app-sorter-list></app-sorter-list>    
 <div class="list">  
     <div class="card" *ngFor="let item of watchList | searchFilter:searchService.inputSearch | sort:sorterListService.sortType">
+        <svg-icon class="delete" src="/assets/svg/close.svg" (click)="deleteItem(item)"></svg-icon>
         <a class="product-image" routerLink="watch/{{item.id}}">
             <img src="{{item.img}}" alt="" > 
         </a>  

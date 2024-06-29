@@ -1,17 +1,17 @@
 
 <div>
-    <input type="text"  [(ngModel)]="watch.brandTitle" placeholder="">
-    <input type="text"  [(ngModel)]="watch.colorName" placeholder="">
-    <input type="text"  [(ngModel)]="watch.date" placeholder="">
-    <input type="text"  [(ngModel)]="watch.model" placeholder="">
-    <input type="text"  [(ngModel)]="watch.price" placeholder="">
-    <input type="text"  [(ngModel)]="watch.genderType" placeholder="">
-    <input type="text"  [(ngModel)]="watch.warrantyType" placeholder="">
+    <input type="text"  [(ngModel)]="item.brandTitle" placeholder="">
+    <input type="text"  [(ngModel)]="item.colorName" placeholder="">
+    <input type="text"  [(ngModel)]="item.date" placeholder="">
+    <input type="text"  [(ngModel)]="item.model" placeholder="">
+    <input type="text"  [(ngModel)]="item.price" placeholder="">
+    <input type="text"  [(ngModel)]="item.genderType" placeholder="">
+    <input type="text"  [(ngModel)]="item.warrantyType" placeholder="">
 </div>
 
 <div>
-    <button type="button" class="add-button">{{(watch.id) ? 'edit' : 'add'}}</button>
-    <button type="button" class="cancel">cancel</button>
+    <button type="button" class="add-button" (click)="editWatch()">{{(item.id) ? 'edit' : 'add'}}</button>
+    <!-- <button type="button" class="add-button" (click)="addWatch()">{{(item.id) ? 'edit' : 'add'}}</button> -->
 </div>
 
 

@@ -43,7 +43,7 @@
         </div>
         <div class="footer-box">
             <button class="return" [routerLink]="''">بازگشت به صفحه محصولات</button>
-            <button class="clear-all" (click)="clearAllList()" *ngIf="cartList.length != 0">پاک کردن سبد خرید</button>
+            <button class="clear-all" (click)="clearAllList()" *ngIf="cartList?.length > 0">پاک کردن سبد خرید</button>
         </div>
     </div>
 </div>
